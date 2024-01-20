@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "114888576002",
+    "project_id": "saayshop-46a8f",
+    "storage_bucket": "saayshop-46a8f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114888576002:android:307f192499f89a4b4b6b1b",
+        "android_client_info": {
+          "package_name": "io.saay.shopo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114888576002-vhe38a8qntb0knmgglffh3p8g9pnkv4u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX21MiuBBjiugBwouJSz9_RBKYQa-ATzI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "114888576002-vhe38a8qntb0knmgglffh3p8g9pnkv4u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
