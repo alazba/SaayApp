@@ -1,14 +1,14 @@
-import 'package:alenjaz_user/common/widgets/cart_count_widget.dart';
-import 'package:alenjaz_user/common/widgets/custom_asset_image_widget.dart';
-import 'package:alenjaz_user/features/cart/providers/cart_provider.dart';
-import 'package:alenjaz_user/features/splash/providers/splash_provider.dart';
-import 'package:alenjaz_user/helper/cart_helper.dart';
-import 'package:alenjaz_user/helper/responsive_helper.dart';
-import 'package:alenjaz_user/utill/app_constants.dart';
-import 'package:alenjaz_user/utill/dimensions.dart';
-import 'package:alenjaz_user/utill/images.dart';
-import 'package:alenjaz_user/utill/routes.dart';
-import 'package:alenjaz_user/utill/styles.dart';
+import 'package:saay_user/common/widgets/cart_count_widget.dart';
+import 'package:saay_user/common/widgets/custom_asset_image_widget.dart';
+import 'package:saay_user/features/cart/providers/cart_provider.dart';
+import 'package:saay_user/features/splash/providers/splash_provider.dart';
+import 'package:saay_user/helper/cart_helper.dart';
+import 'package:saay_user/helper/responsive_helper.dart';
+import 'package:saay_user/utill/app_constants.dart';
+import 'package:saay_user/utill/dimensions.dart';
+import 'package:saay_user/utill/images.dart';
+import 'package:saay_user/utill/routes.dart';
+import 'package:saay_user/utill/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -29,26 +29,31 @@ class HomeAppBarWidget extends StatelessWidget {
       automaticallyImplyLeading: false,
       backgroundColor: Theme.of(context).cardColor,
       pinned: ResponsiveHelper.isTab(context) ? true : false,
-      leading: ResponsiveHelper.isTab(context) ? IconButton(
-        onPressed: () => drawerGlobalKey.currentState!.openDrawer(),
-        icon: const Icon(Icons.menu,color: Colors.black),
-      ): null,
-      title: Consumer<SplashProvider>(builder:(context, splash, child) => Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          const CustomAssetImageWidget(Images.logo, width: 40, height: 40),
-          const SizedBox(width: 10),
-
-          Expanded(
-            child: Text(AppConstants.appName,
-              style: rubikBold.copyWith(color: Theme.of(context).primaryColor),
-              maxLines: 1, overflow: TextOverflow.ellipsis,
-            ),
-          ),
-        ],
-      )),
+      leading: ResponsiveHelper.isTab(context)
+          ? IconButton(
+              onPressed: () => drawerGlobalKey.currentState!.openDrawer(),
+              icon: const Icon(Icons.menu, color: Colors.black),
+            )
+          : null,
+      title: Consumer<SplashProvider>(
+          builder: (context, splash, child) => Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  const CustomAssetImageWidget(Images.logo,
+                      width: 80, height: 80),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: Text(
+                      AppConstants.appName,
+                      style: rubikBold.copyWith(
+                          color: Theme.of(context).primaryColor),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                ],
+              )),
       actions: [
-
         InkWell(
           borderRadius: BorderRadius.circular(50),
           hoverColor: Colors.transparent,
@@ -58,7 +63,6 @@ class HomeAppBarWidget extends StatelessWidget {
               color: Theme.of(context).secondaryHeaderColor,
               shape: BoxShape.circle,
             ),
-
             child: Padding(
               padding: const EdgeInsets.all(8),
               child: Image.asset(Images.coupon, height: 16, width: 16),
@@ -66,18 +70,22 @@ class HomeAppBarWidget extends StatelessWidget {
           ),
         ),
         const SizedBox(width: Dimensions.paddingSizeLarge),
-
         IconButton(
-          onPressed: () => Navigator.pushNamed(context, Routes.getNotificationRoute()),
-          icon: Icon(Icons.notifications, color: Theme.of(context).focusColor, size: 30),
+          onPressed: () =>
+              Navigator.pushNamed(context, Routes.getNotificationRoute()),
+          icon: Icon(Icons.notifications,
+              color: Theme.of(context).focusColor, size: 30),
         ),
-
-        if(ResponsiveHelper.isTab(context))IconButton(
-          onPressed: () => Navigator.pushNamed(context, Routes.getDashboardRoute('cart')),
-          icon: Consumer<CartProvider>(builder: (context, cartProvider, _)=> CartCountWidget(
-            count: CartHelper.getCartItemCount(cartProvider.cartList), icon: Icons.shopping_cart,
-          )),
-        ),
+        if (ResponsiveHelper.isTab(context))
+          IconButton(
+            onPressed: () =>
+                Navigator.pushNamed(context, Routes.getDashboardRoute('cart')),
+            icon: Consumer<CartProvider>(
+                builder: (context, cartProvider, _) => CartCountWidget(
+                      count: CartHelper.getCartItemCount(cartProvider.cartList),
+                      icon: Icons.shopping_cart,
+                    )),
+          ),
       ],
     );
   }

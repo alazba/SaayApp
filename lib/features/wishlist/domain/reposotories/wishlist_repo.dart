@@ -1,7 +1,7 @@
-import 'package:alenjaz_user/data/datasource/remote/dio/dio_client.dart';
-import 'package:alenjaz_user/data/datasource/remote/exception/api_error_handler.dart';
-import 'package:alenjaz_user/common/models/api_response_model.dart';
-import 'package:alenjaz_user/utill/app_constants.dart';
+import 'package:saay_user/data/datasource/remote/dio/dio_client.dart';
+import 'package:saay_user/data/datasource/remote/exception/api_error_handler.dart';
+import 'package:saay_user/common/models/api_response_model.dart';
+import 'package:saay_user/utill/app_constants.dart';
 
 class WishListRepo {
   final DioClient? dioClient;
@@ -19,7 +19,8 @@ class WishListRepo {
 
   Future<ApiResponseModel> addWishList(List<int?> productID) async {
     try {
-      final response = await dioClient!.post(AppConstants.addWishListUri, data: {'product_ids' : productID});
+      final response = await dioClient!
+          .post(AppConstants.addWishListUri, data: {'product_ids': productID});
 
       return ApiResponseModel.withSuccess(response);
     } catch (e) {
@@ -29,7 +30,8 @@ class WishListRepo {
 
   Future<ApiResponseModel> removeWishList(List<int?> productID) async {
     try {
-      final response = await dioClient!.delete(AppConstants.removeWishListUri, data: {'product_ids' : productID, '_method':'delete'});
+      final response = await dioClient!.delete(AppConstants.removeWishListUri,
+          data: {'product_ids': productID, '_method': 'delete'});
       return ApiResponseModel.withSuccess(response);
     } catch (e) {
       return ApiResponseModel.withError(ApiErrorHandler.getMessage(e));

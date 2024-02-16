@@ -1,6 +1,6 @@
-import 'package:alenjaz_user/utill/app_constants.dart';
+import 'package:saay_user/utill/app_constants.dart';
 import 'package:flutter/material.dart';
-import 'package:alenjaz_user/utill/dimensions.dart';
+import 'package:saay_user/utill/dimensions.dart';
 
 const rubikRegular = TextStyle(
   fontFamily: AppConstants.fontFamily,

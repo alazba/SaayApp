@@ -1,7 +1,7 @@
-import 'package:alenjaz_user/data/datasource/remote/dio/dio_client.dart';
-import 'package:alenjaz_user/data/datasource/remote/exception/api_error_handler.dart';
-import 'package:alenjaz_user/common/models/api_response_model.dart';
-import 'package:alenjaz_user/utill/app_constants.dart';
+import 'package:saay_user/data/datasource/remote/dio/dio_client.dart';
+import 'package:saay_user/data/datasource/remote/exception/api_error_handler.dart';
+import 'package:saay_user/common/models/api_response_model.dart';
+import 'package:saay_user/utill/app_constants.dart';
 
 class CouponRepo {
   final DioClient? dioClient;
@@ -18,7 +18,8 @@ class CouponRepo {
 
   Future<ApiResponseModel> applyCoupon(String couponCode) async {
     try {
-      final response = await dioClient!.get('${AppConstants.couponApplyUri}$couponCode');
+      final response =
+          await dioClient!.get('${AppConstants.couponApplyUri}$couponCode');
       return ApiResponseModel.withSuccess(response);
     } catch (e) {
       return ApiResponseModel.withError(ApiErrorHandler.getMessage(e));

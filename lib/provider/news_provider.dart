@@ -1,23 +1,24 @@
-import 'package:alenjaz_user/common/models/api_response_model.dart';
-import 'package:alenjaz_user/common/reposotories/news_letter_repo.dart';
-import 'package:alenjaz_user/localization/language_constrants.dart';
-import 'package:alenjaz_user/main.dart';
-import 'package:alenjaz_user/helper/custom_snackbar_helper.dart';
+import 'package:saay_user/common/models/api_response_model.dart';
+import 'package:saay_user/common/reposotories/news_letter_repo.dart';
+import 'package:saay_user/localization/language_constrants.dart';
+import 'package:saay_user/main.dart';
+import 'package:saay_user/helper/custom_snackbar_helper.dart';
 import 'package:flutter/material.dart';
-
 
 class NewsLetterProvider extends ChangeNotifier {
   final NewsLetterRepo? newsLetterRepo;
   NewsLetterProvider({required this.newsLetterRepo});
 
-
   Future<void> addToNewsLetter(String email) async {
     ApiResponseModel apiResponse = await newsLetterRepo!.addToNewsLetter(email);
-    if (apiResponse.response != null && apiResponse.response!.statusCode == 200) {
-      showCustomSnackBar(getTranslated('successfully_subscribe', Get.context!), Get.context!,isError: false);
+    if (apiResponse.response != null &&
+        apiResponse.response!.statusCode == 200) {
+      showCustomSnackBar(
+          getTranslated('successfully_subscribe', Get.context!), Get.context!,
+          isError: false);
     } else {
-      showCustomSnackBar(getTranslated('mail_already_exist', Get.context!), Get.context!);
+      showCustomSnackBar(
+          getTranslated('mail_already_exist', Get.context!), Get.context!);
     }
   }
-
 }

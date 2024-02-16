@@ -1,7 +1,7 @@
-import 'package:alenjaz_user/data/datasource/remote/dio/dio_client.dart';
-import 'package:alenjaz_user/data/datasource/remote/exception/api_error_handler.dart';
-import 'package:alenjaz_user/common/models/api_response_model.dart';
-import 'package:alenjaz_user/utill/app_constants.dart';
+import 'package:saay_user/data/datasource/remote/dio/dio_client.dart';
+import 'package:saay_user/data/datasource/remote/exception/api_error_handler.dart';
+import 'package:saay_user/common/models/api_response_model.dart';
+import 'package:saay_user/utill/app_constants.dart';
 
 class BannerRepo {
   final DioClient? dioClient;
@@ -18,7 +18,8 @@ class BannerRepo {
 
   Future<ApiResponseModel> getProductDetails(String productID) async {
     try {
-      final response = await dioClient!.get('${AppConstants.productDetailsUri}$productID');
+      final response =
+          await dioClient!.get('${AppConstants.productDetailsUri}$productID');
       return ApiResponseModel.withSuccess(response);
     } catch (e) {
       return ApiResponseModel.withError(ApiErrorHandler.getMessage(e));

@@ -1,6 +1,6 @@
-import 'package:alenjaz_user/common/models/language_model.dart';
-import 'package:alenjaz_user/common/enums/app_mode.dart';
-import 'package:alenjaz_user/utill/images.dart';
+import 'package:saay_user/common/models/language_model.dart';
+import 'package:saay_user/common/enums/app_mode.dart';
+import 'package:saay_user/utill/images.dart';
 
 class AppConstants {
   static const String appName = '';

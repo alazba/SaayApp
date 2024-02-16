@@ -1,33 +1,34 @@
 // Order Status
 // ignore_for_file: constant_identifier_names
 
-import 'package:alenjaz_user/common/models/cart_model.dart';
-import 'package:alenjaz_user/common/models/order_details_model.dart';
-import 'package:alenjaz_user/common/models/product_model.dart';
-import 'package:alenjaz_user/common/models/reorder_details_model.dart';
-import 'package:alenjaz_user/helper/price_converter_helper.dart';
-import 'package:alenjaz_user/main.dart';
-import 'package:alenjaz_user/features/cart/providers/cart_provider.dart';
+import 'package:saay_user/common/models/cart_model.dart';
+import 'package:saay_user/common/models/order_details_model.dart';
+import 'package:saay_user/common/models/product_model.dart';
+import 'package:saay_user/common/models/reorder_details_model.dart';
+import 'package:saay_user/helper/price_converter_helper.dart';
+import 'package:saay_user/main.dart';
+import 'package:saay_user/features/cart/providers/cart_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-
 class OrderHelper {
-  static int getOrderItemQuantity(List<OrderDetailsModel>? orderDetailsList){
+  static int getOrderItemQuantity(List<OrderDetailsModel>? orderDetailsList) {
     int quantity = 0;
-    if(orderDetailsList != null) {
-      for(int i = 0; i < orderDetailsList.length; i++) {
+    if (orderDetailsList != null) {
+      for (int i = 0; i < orderDetailsList.length; i++) {
         quantity = quantity + (orderDetailsList[i].quantity ?? 0);
       }
     }
     return quantity;
   }
 
-  static String? getVariationType(List<Variation>? productVariationList, String? orderedVariation ) {
+  static String? getVariationType(
+      List<Variation>? productVariationList, String? orderedVariation) {
     String? type;
-    if(productVariationList != null && orderedVariation != null) {
-      for(int i = 0; i < productVariationList.length; i++) {
-        if(productVariationList[i].type != null && orderedVariation.contains(productVariationList[i].type!)) {
+    if (productVariationList != null && orderedVariation != null) {
+      for (int i = 0; i < productVariationList.length; i++) {
+        if (productVariationList[i].type != null &&
+            orderedVariation.contains(productVariationList[i].type!)) {
           type = productVariationList[i].type;
         }
       }
@@ -36,29 +37,31 @@ class OrderHelper {
     return type;
   }
 
-
-  static List<CartModel> getReorderCartData({required ReOrderDetailsModel reOrderDetailsModel}) {
-
-
+  static List<CartModel> getReorderCartData(
+      {required ReOrderDetailsModel reOrderDetailsModel}) {
     List<CartModel> cartList = [];
 
-    for(OrderDetailsModel orderDetail in reOrderDetailsModel.orderDetails ?? []) {
-
+    for (OrderDetailsModel orderDetail
+        in reOrderDetailsModel.orderDetails ?? []) {
       Product? product = _getReorderProduct(reOrderDetailsModel, orderDetail);
 
       List<Variation>? variationList = [];
 
-      if(_getVariationForCart(orderDetail, product) != null) {
+      if (_getVariationForCart(orderDetail, product) != null) {
         variationList.add(_getVariationForCart(orderDetail, product)!);
       }
 
-
-      if(product != null) {
+      if (product != null) {
         cartList.add(CartModel(
-          product.id, product.price,
-          PriceConverterHelper.convertWithDiscount(product.price, product.discount, product.discountType),
-          variationList, product.discount, 1,
-          product.tax, product.totalStock,
+          product.id,
+          product.price,
+          PriceConverterHelper.convertWithDiscount(
+              product.price, product.discount, product.discountType),
+          variationList,
+          product.discount,
+          1,
+          product.tax,
+          product.totalStock,
           product,
         ));
       }
@@ -67,10 +70,11 @@ class OrderHelper {
     return cartList;
   }
 
-  static Product? _getReorderProduct(ReOrderDetailsModel reOrderDetailsModel, OrderDetailsModel orderDetail){
+  static Product? _getReorderProduct(
+      ReOrderDetailsModel reOrderDetailsModel, OrderDetailsModel orderDetail) {
     Product? product;
-    for(int i = 0; i < (reOrderDetailsModel.products?.length ?? 0); i++) {
-      if(orderDetail.productId == reOrderDetailsModel.products?[i].id) {
+    for (int i = 0; i < (reOrderDetailsModel.products?.length ?? 0); i++) {
+      if (orderDetail.productId == reOrderDetailsModel.products?[i].id) {
         product = reOrderDetailsModel.products?[i];
       }
     }
@@ -78,10 +82,11 @@ class OrderHelper {
     return product;
   }
 
-  static Product? getOrderedProductProduct(ReOrderDetailsModel? reOrderDetailsModel, int? productId ){
+  static Product? getOrderedProductProduct(
+      ReOrderDetailsModel? reOrderDetailsModel, int? productId) {
     Product? product;
-    for(int i = 0; i < (reOrderDetailsModel?.orderDetails?.length ?? 0); i++) {
-      if(productId == reOrderDetailsModel?.orderDetails?[i].productId) {
+    for (int i = 0; i < (reOrderDetailsModel?.orderDetails?.length ?? 0); i++) {
+      if (productId == reOrderDetailsModel?.orderDetails?[i].productId) {
         product = reOrderDetailsModel?.orderDetails?[i].productDetails;
       }
     }
@@ -89,53 +94,53 @@ class OrderHelper {
     return product;
   }
 
-
-
-  static Variation? _getVariationForCart(OrderDetailsModel orderDetail, Product? product) {
+  static Variation? _getVariationForCart(
+      OrderDetailsModel orderDetail, Product? product) {
     Variation? variation;
     String? orderedVariation = orderDetail.variation;
     String? type;
     double? price;
     int? stock;
 
-    if(orderedVariation != null && orderedVariation.isNotEmpty){
+    if (orderedVariation != null && orderedVariation.isNotEmpty) {
+      type = OrderHelper.getVariationType(
+          orderDetail.productDetails?.variations, orderedVariation);
 
-      type = OrderHelper.getVariationType(orderDetail.productDetails?.variations, orderedVariation);
-
-      for(Variation value in (product?.variations ?? [])) {
-        if(type == value.type) {
-          stock =  value.stock;
-          price =  value.price;
+      for (Variation value in (product?.variations ?? [])) {
+        if (type == value.type) {
+          stock = value.stock;
+          price = value.price;
         }
       }
 
-
-       variation = Variation(type: type, price: price, stock: stock);
+      variation = Variation(type: type, price: price, stock: stock);
     }
 
     return variation;
   }
 
-
-  static bool addToCartReorderProduct({required List<CartModel> cartList}){
-    final CartProvider cartProvider = Provider.of<CartProvider>(Get.context!, listen: false);
+  static bool addToCartReorderProduct({required List<CartModel> cartList}) {
+    final CartProvider cartProvider =
+        Provider.of<CartProvider>(Get.context!, listen: false);
     List<CartModel> availableCartList = [];
     Navigator.pop(Get.context!);
 
-    for(int i = 0; i < cartList.length; i++) {
-
+    for (int i = 0; i < cartList.length; i++) {
       bool isVariationStockAvailable = true;
 
-      if(((cartList[i].variation?.length ?? 0) > 0) && ((cartList[i].variation?.first.stock ?? 0) < 1) ){
+      if (((cartList[i].variation?.length ?? 0) > 0) &&
+          ((cartList[i].variation?.first.stock ?? 0) < 1)) {
         isVariationStockAvailable = false;
       }
 
-      if(cartProvider.getCartProductIndex(cartList[i]) == null && ((cartList[i].stock ?? 0) > 0) && isVariationStockAvailable) {
+      if (cartProvider.getCartProductIndex(cartList[i]) == null &&
+          ((cartList[i].stock ?? 0) > 0) &&
+          isVariationStockAvailable) {
         availableCartList.add(cartList[i]);
       }
     }
 
-    if(availableCartList.isNotEmpty) {
+    if (availableCartList.isNotEmpty) {
       for (var cartModel in availableCartList) {
         cartProvider.addToCart(cartModel, null);
       }

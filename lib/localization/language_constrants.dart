@@ -1,12 +1,12 @@
-import 'package:alenjaz_user/localization/app_localization.dart';
+import 'package:saay_user/localization/app_localization.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 String getTranslated(String? key, BuildContext context) {
   String? text = key;
-  try{
+  try {
     text = AppLocalization.of(context)!.translate(key);
-  }catch (error){
+  } catch (error) {
     if (kDebugMode) {
       print('not localized --- $error');
     }

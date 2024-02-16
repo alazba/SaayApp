@@ -1,6 +1,6 @@
-import 'package:alenjaz_user/common/widgets/custom_asset_image_widget.dart';
-import 'package:alenjaz_user/utill/dimensions.dart';
-import 'package:alenjaz_user/utill/styles.dart';
+import 'package:saay_user/common/widgets/custom_asset_image_widget.dart';
+import 'package:saay_user/utill/dimensions.dart';
+import 'package:saay_user/utill/styles.dart';
 import 'package:flutter/material.dart';
 
 class SupportCardWidget extends StatelessWidget {
@@ -8,25 +8,39 @@ class SupportCardWidget extends StatelessWidget {
   final String icon;
   final Function onTap;
   const SupportCardWidget({
-    Key? key, required this.title, required this.icon, required this.onTap,
+    Key? key,
+    required this.title,
+    required this.icon,
+    required this.onTap,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: ()=> onTap(),
+      onTap: () => onTap(),
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: Dimensions.paddingSizeDefault, horizontal: Dimensions.paddingSizeLarge),
+        padding: const EdgeInsets.symmetric(
+            vertical: Dimensions.paddingSizeDefault,
+            horizontal: Dimensions.paddingSizeLarge),
         decoration: BoxDecoration(
-          border: Border.all(color: Theme.of(context).primaryColor.withOpacity(0.05), width: 1),
+          border: Border.all(
+              color: Theme.of(context).primaryColor.withOpacity(0.05),
+              width: 1),
           borderRadius: BorderRadius.circular(Dimensions.radiusSizeDefault),
           color: Theme.of(context).canvasColor,
         ),
-        child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-          Flexible(child: Text(title, style: rubikRegular,)),
+        child:
+            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+          Flexible(
+              child: Text(
+            title,
+            style: rubikRegular,
+          )),
           const SizedBox(width: Dimensions.paddingSizeDefault),
-
-          CustomAssetImageWidget(icon, color: Theme.of(context).primaryColor,),
+          CustomAssetImageWidget(
+            icon,
+            color: Theme.of(context).primaryColor,
+          ),
         ]),
       ),
     );

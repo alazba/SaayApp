@@ -1,4 +1,4 @@
-import 'package:alenjaz_user/common/models/product_model.dart';
+import 'package:saay_user/common/models/product_model.dart';
 
 class FlashSaleModel {
   int? totalSize;
@@ -7,7 +7,8 @@ class FlashSaleModel {
   FlashSale? flashSale;
   List<Product>? products;
 
-  FlashSaleModel({this.totalSize, this.limit, this.offset, this.flashSale, this.products});
+  FlashSaleModel(
+      {this.totalSize, this.limit, this.offset, this.flashSale, this.products});
 
   FlashSaleModel.fromJson(Map<String, dynamic> json) {
     totalSize = int.tryParse('${json['total_size']}');

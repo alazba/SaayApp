@@ -1,4 +1,4 @@
-import 'package:alenjaz_user/common/models/product_model.dart';
+import 'package:saay_user/common/models/product_model.dart';
 
 class NewArrivalProductsModel {
   int? totalSize;
@@ -6,7 +6,8 @@ class NewArrivalProductsModel {
   int? offset;
   List<Product>? products;
 
-  NewArrivalProductsModel({this.totalSize, this.limit, this.offset, this.products});
+  NewArrivalProductsModel(
+      {this.totalSize, this.limit, this.offset, this.products});
 
   NewArrivalProductsModel.fromJson(Map<String, dynamic> json) {
     totalSize = int.tryParse('${json['total_size']}');

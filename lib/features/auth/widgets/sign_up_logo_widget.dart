@@ -1,8 +1,8 @@
-import 'package:alenjaz_user/helper/responsive_helper.dart';
-import 'package:alenjaz_user/localization/language_constrants.dart';
-import 'package:alenjaz_user/utill/dimensions.dart';
-import 'package:alenjaz_user/utill/images.dart';
-import 'package:alenjaz_user/utill/styles.dart';
+import 'package:saay_user/helper/responsive_helper.dart';
+import 'package:saay_user/localization/language_constrants.dart';
+import 'package:saay_user/utill/dimensions.dart';
+import 'package:saay_user/utill/images.dart';
+import 'package:saay_user/utill/styles.dart';
 import 'package:flutter/material.dart';
 
 class SignUpLogoWidget extends StatelessWidget {
@@ -23,9 +23,10 @@ class SignUpLogoWidget extends StatelessWidget {
           matchTextDirection: true,
         ),
         const SizedBox(height: Dimensions.paddingSizeSmall),
-        Text(getTranslated('signup', context), style: rubikMedium.copyWith(
-          fontSize: Dimensions.fontSizeOverLarge,
-        )),
+        Text(getTranslated('signup', context),
+            style: rubikMedium.copyWith(
+              fontSize: Dimensions.fontSizeOverLarge,
+            )),
         const SizedBox(height: Dimensions.paddingSizeLarge),
       ]),
     );

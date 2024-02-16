@@ -1,6 +1,6 @@
-import 'package:alenjaz_user/helper/responsive_helper.dart';
-import 'package:alenjaz_user/utill/dimensions.dart';
-import 'package:alenjaz_user/utill/styles.dart';
+import 'package:saay_user/helper/responsive_helper.dart';
+import 'package:saay_user/utill/dimensions.dart';
+import 'package:saay_user/utill/styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomWebTitleWidget extends StatelessWidget {
@@ -9,9 +9,15 @@ class CustomWebTitleWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ResponsiveHelper.isDesktop(context) ? Padding(
-      padding: const EdgeInsets.symmetric(vertical: Dimensions.paddingSizeDefault),
-      child: Center(child: Text(title, style: rubikBold.copyWith(fontSize: Dimensions.fontSizeOverLarge))),
-    ) : const SizedBox();
+    return ResponsiveHelper.isDesktop(context)
+        ? Padding(
+            padding: const EdgeInsets.symmetric(
+                vertical: Dimensions.paddingSizeDefault),
+            child: Center(
+                child: Text(title,
+                    style: rubikBold.copyWith(
+                        fontSize: Dimensions.fontSizeOverLarge))),
+          )
+        : const SizedBox();
   }
 }

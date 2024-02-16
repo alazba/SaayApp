@@ -1,6 +1,6 @@
-import 'package:alenjaz_user/common/reposotories/language_repo.dart';
+import 'package:saay_user/common/reposotories/language_repo.dart';
 import 'package:flutter/material.dart';
-import 'package:alenjaz_user/common/models/language_model.dart';
+import 'package:saay_user/common/models/language_model.dart';
 
 class LanguageProvider with ChangeNotifier {
   final LanguageRepo? languageRepo;

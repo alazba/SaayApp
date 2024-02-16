@@ -1,20 +1,20 @@
-import 'package:alenjaz_user/data/datasource/remote/dio/dio_client.dart';
-import 'package:alenjaz_user/data/datasource/remote/exception/api_error_handler.dart';
-import 'package:alenjaz_user/common/models/api_response_model.dart';
-import 'package:alenjaz_user/utill/app_constants.dart';
+import 'package:saay_user/data/datasource/remote/dio/dio_client.dart';
+import 'package:saay_user/data/datasource/remote/exception/api_error_handler.dart';
+import 'package:saay_user/common/models/api_response_model.dart';
+import 'package:saay_user/utill/app_constants.dart';
 
 class NewsLetterRepo {
   final DioClient? dioClient;
 
   NewsLetterRepo({required this.dioClient});
 
-  Future<ApiResponseModel> addToNewsLetter(String  email) async {
+  Future<ApiResponseModel> addToNewsLetter(String email) async {
     try {
-      final response = await dioClient!.post(AppConstants.emailSubscribeUri, data : {'email':email});
+      final response = await dioClient!
+          .post(AppConstants.emailSubscribeUri, data: {'email': email});
       return ApiResponseModel.withSuccess(response);
     } catch (e) {
       return ApiResponseModel.withError(ApiErrorHandler.getMessage(e));
     }
   }
-
 }

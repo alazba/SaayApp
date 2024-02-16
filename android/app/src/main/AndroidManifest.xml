@@ -27,7 +27,7 @@
     </queries>
 
     <application
-        android:label="Saay"
+        android:label="SaayTech"
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"
         android:networkSecurityConfig="@xml/network_security_config"

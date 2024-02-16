@@ -1,16 +1,16 @@
 import 'dart:convert';
 
-import 'package:alenjaz_user/common/models/cart_model.dart';
-import 'package:alenjaz_user/utill/app_constants.dart';
+import 'package:saay_user/common/models/cart_model.dart';
+import 'package:saay_user/utill/app_constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class CartRepo{
+class CartRepo {
   final SharedPreferences? sharedPreferences;
   CartRepo({required this.sharedPreferences});
 
   List<CartModel> getCartList() {
     List<String>? carts = [];
-    if(sharedPreferences!.containsKey(AppConstants.cartList)) {
+    if (sharedPreferences!.containsKey(AppConstants.cartList)) {
       carts = sharedPreferences!.getStringList(AppConstants.cartList);
     }
     List<CartModel> cartList = [];
@@ -27,5 +27,4 @@ class CartRepo{
     }
     sharedPreferences!.setStringList(AppConstants.cartList, carts);
   }
-
 }
