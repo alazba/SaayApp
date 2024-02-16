@@ -1,6 +1,6 @@
 # saay_user
 
-A new Flutter restaurant application.
+A new Flutter store application.
 
 ## Getting Started
 

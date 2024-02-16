@@ -16,7 +16,7 @@ class CartDetailsWidget extends StatelessWidget {
   final bool isSelfPickupActive;
   final bool kmWiseCharge;
   final double itemPrice;
-  final double tax;
+  //final double tax;
   final double discount;
   final double deliveryCharge;
   final double total;
@@ -27,7 +27,7 @@ class CartDetailsWidget extends StatelessWidget {
     required this.isSelfPickupActive,
     required this.kmWiseCharge,
     required this.itemPrice,
-    required this.tax,
+    //required this.tax,
     required this.discount,
     required this.deliveryCharge,
     required this.total,
@@ -91,10 +91,11 @@ class CartDetailsWidget extends StatelessWidget {
               ),
               const SizedBox(height: 10),
 
-              CartItemWidget(
-                title: getTranslated('tax', context),
-                subTitle: PriceConverterHelper.convertPrice(tax),
-              ),
+              // CartItemWidget(
+              //   title: getTranslated('tax', context),
+              //   subTitle: PriceConverterHelper.convertPrice(tax),
+              // ),
+
               const SizedBox(height: 10),
 
               CartItemWidget(

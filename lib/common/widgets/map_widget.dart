@@ -80,9 +80,9 @@ class _MapWidgetState extends State<MapWidget> {
                   width: Dimensions.webScreenWidth,
                   child: Stack(children: [
                     GoogleMap(
-                      minMaxZoomPreference: const MinMaxZoomPreference(0, 16),
+                      minMaxZoomPreference: const MinMaxZoomPreference(0, 14),
                       initialCameraPosition:
-                          CameraPosition(target: _latLng, zoom: 16),
+                          CameraPosition(target: _latLng, zoom: 13),
                       zoomGesturesEnabled: true,
                       myLocationButtonEnabled: false,
                       zoomControlsEnabled: false,

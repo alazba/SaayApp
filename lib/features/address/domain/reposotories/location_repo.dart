@@ -61,7 +61,7 @@ class LocationRepo {
 
   List<String> getAllAddressType({BuildContext? context}) {
     return [
-      'Home',
+      'House',
       'Workplace',
       'Other',
     ];
