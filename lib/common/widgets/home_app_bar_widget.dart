@@ -35,24 +35,24 @@ class HomeAppBarWidget extends StatelessWidget {
               icon: const Icon(Icons.menu, color: Colors.black),
             )
           : null,
-      title: Consumer<SplashProvider>(
-          builder: (context, splash, child) => Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  const CustomAssetImageWidget(Images.logo,
-                      width: 80, height: 80),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: Text(
-                      AppConstants.appName,
-                      style: rubikBold.copyWith(
-                          color: Theme.of(context).primaryColor),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                  ),
-                ],
-              )),
+      // title: Consumer<SplashProvider>(
+      //     builder: (context, splash, child) => Row(
+      //           crossAxisAlignment: CrossAxisAlignment.center,
+      //           children: [
+      //             const CustomAssetImageWidget(Images.logo,
+      //                 width: 80, height: 80),
+      //             const SizedBox(width: 10),
+      //             Expanded(
+      //               child: Text(
+      //                 AppConstants.appName,
+      //                 style: rubikBold.copyWith(
+      //                     color: Theme.of(context).primaryColor),
+      //                 maxLines: 1,
+      //                 overflow: TextOverflow.ellipsis,
+      //               ),
+      //             ),
+      //           ],
+      //         )),
       actions: [
         InkWell(
           borderRadius: BorderRadius.circular(50),
@@ -64,17 +64,17 @@ class HomeAppBarWidget extends StatelessWidget {
               shape: BoxShape.circle,
             ),
             child: Padding(
-              padding: const EdgeInsets.all(8),
+              padding: const EdgeInsets.all(5),
               child: Image.asset(Images.coupon, height: 16, width: 16),
             ),
           ),
         ),
-        const SizedBox(width: Dimensions.paddingSizeLarge),
+        const SizedBox(width: Dimensions.paddingSizeExtraSmall),
         IconButton(
           onPressed: () =>
               Navigator.pushNamed(context, Routes.getNotificationRoute()),
-          icon: Icon(Icons.notifications,
-              color: Theme.of(context).focusColor, size: 30),
+          icon: const Icon(Icons.notifications,
+              color: Color.fromARGB(255, 180, 178, 178), size: 20),
         ),
         if (ResponsiveHelper.isTab(context))
           IconButton(

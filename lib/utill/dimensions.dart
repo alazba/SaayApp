@@ -19,7 +19,6 @@ class Dimensions {
   static const double radiusSizeDefault = 8.0;
   static const double radiusSizeFifty = 50.0;
 
-
   static const double webScreenWidth = 1170;
   static const int messageInputLength = 250;
   static const int webHeaderHeight = 90;
