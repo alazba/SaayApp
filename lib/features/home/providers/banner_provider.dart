@@ -1,10 +1,10 @@
-import 'package:saay_user/features/home/enums/banner_type_enum.dart';
+import 'package:enjaz_user/features/home/enums/banner_type_enum.dart';
 import 'package:flutter/material.dart';
-import 'package:saay_user/features/home/domain/models/banner_model.dart';
-import 'package:saay_user/common/models/api_response_model.dart';
-import 'package:saay_user/common/models/product_model.dart';
-import 'package:saay_user/features/home/domain/reposotories/banner_repo.dart';
-import 'package:saay_user/helper/api_checker_helper.dart';
+import 'package:enjaz_user/features/home/domain/models/banner_model.dart';
+import 'package:enjaz_user/common/models/api_response_model.dart';
+import 'package:enjaz_user/common/models/product_model.dart';
+import 'package:enjaz_user/features/home/domain/reposotories/banner_repo.dart';
+import 'package:enjaz_user/helper/api_checker_helper.dart';
 
 class BannerProvider extends ChangeNotifier {
   final BannerRepo? bannerRepo;

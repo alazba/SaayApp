@@ -1,8 +1,8 @@
-import 'package:saay_user/utill/app_constants.dart';
+import 'package:enjaz_user/utill/app_constants.dart';
 import 'package:flutter/material.dart';
-import 'package:saay_user/common/models/api_response_model.dart';
-import 'package:saay_user/common/models/onboarding_model.dart';
-import 'package:saay_user/features/onboarding/domain/reposotories/onboarding_repo.dart';
+import 'package:enjaz_user/common/models/api_response_model.dart';
+import 'package:enjaz_user/common/models/onboarding_model.dart';
+import 'package:enjaz_user/features/onboarding/domain/reposotories/onboarding_repo.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class OnBoardingProvider with ChangeNotifier {

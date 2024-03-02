@@ -1,13 +1,13 @@
-import 'package:saay_user/common/widgets/title_widget.dart';
-import 'package:saay_user/features/category/providers/category_provider.dart';
-import 'package:saay_user/features/home/widgets/categories_web_widget.dart';
-import 'package:saay_user/features/home/widgets/category_shimmer_widget.dart';
-import 'package:saay_user/helper/responsive_helper.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/utill/images.dart';
-import 'package:saay_user/utill/routes.dart';
-import 'package:saay_user/utill/styles.dart';
+import 'package:enjaz_user/common/widgets/title_widget.dart';
+import 'package:enjaz_user/features/category/providers/category_provider.dart';
+import 'package:enjaz_user/features/home/widgets/categories_web_widget.dart';
+import 'package:enjaz_user/features/home/widgets/category_shimmer_widget.dart';
+import 'package:enjaz_user/helper/responsive_helper.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/images.dart';
+import 'package:enjaz_user/utill/routes.dart';
+import 'package:enjaz_user/utill/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

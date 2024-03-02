@@ -1,15 +1,15 @@
-import 'package:saay_user/common/enums/footer_type_enum.dart';
-import 'package:saay_user/common/models/order_model.dart';
-import 'package:saay_user/helper/responsive_helper.dart';
-import 'package:saay_user/common/widgets/footer_web_widget.dart';
+import 'package:enjaz_user/common/enums/footer_type_enum.dart';
+import 'package:enjaz_user/common/models/order_model.dart';
+import 'package:enjaz_user/helper/responsive_helper.dart';
+import 'package:enjaz_user/common/widgets/footer_web_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/utill/color_resources.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/utill/images.dart';
-import 'package:saay_user/utill/styles.dart';
-import 'package:saay_user/common/widgets/custom_app_bar_widget.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/utill/color_resources.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/images.dart';
+import 'package:enjaz_user/utill/styles.dart';
+import 'package:enjaz_user/common/widgets/custom_app_bar_widget.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 import 'dart:ui';

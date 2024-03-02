@@ -1,6 +1,6 @@
-import 'package:saay_user/helper/responsive_helper.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/utill/styles.dart';
+import 'package:enjaz_user/helper/responsive_helper.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomWebTitleWidget extends StatelessWidget {

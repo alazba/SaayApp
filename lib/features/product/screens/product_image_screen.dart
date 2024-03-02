@@ -1,9 +1,9 @@
-import 'package:saay_user/helper/responsive_helper.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/features/product/providers/product_provider.dart';
-import 'package:saay_user/features/splash/providers/splash_provider.dart';
-import 'package:saay_user/common/widgets/custom_app_bar_widget.dart';
-import 'package:saay_user/common/widgets/main_app_bar_widget.dart';
+import 'package:enjaz_user/helper/responsive_helper.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/features/product/providers/product_provider.dart';
+import 'package:enjaz_user/features/splash/providers/splash_provider.dart';
+import 'package:enjaz_user/common/widgets/custom_app_bar_widget.dart';
+import 'package:enjaz_user/common/widgets/main_app_bar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:photo_view/photo_view.dart';
 import 'package:photo_view/photo_view_gallery.dart';

@@ -1,12 +1,12 @@
-import 'package:saay_user/utill/routes.dart';
-import 'package:saay_user/utill/styles.dart';
-import 'package:saay_user/common/widgets/custom_pop_scope_widget.dart';
+import 'package:enjaz_user/utill/routes.dart';
+import 'package:enjaz_user/utill/styles.dart';
+import 'package:enjaz_user/common/widgets/custom_pop_scope_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/features/onboarding/providers/onboarding_provider.dart';
-import 'package:saay_user/utill/color_resources.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/common/widgets/custom_button_widget.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/features/onboarding/providers/onboarding_provider.dart';
+import 'package:enjaz_user/utill/color_resources.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/common/widgets/custom_button_widget.dart';
 import 'package:provider/provider.dart';
 
 class OnBoardingScreen extends StatelessWidget {

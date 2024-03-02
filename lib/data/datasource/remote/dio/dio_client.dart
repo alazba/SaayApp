@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:dio/dio.dart';
-import 'package:saay_user/data/datasource/remote/dio/logging_interceptor.dart';
-import 'package:saay_user/utill/app_constants.dart';
+import 'package:enjaz_user/data/datasource/remote/dio/logging_interceptor.dart';
+import 'package:enjaz_user/utill/app_constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class DioClient {

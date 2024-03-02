@@ -1,8 +1,8 @@
-import 'package:saay_user/data/datasource/remote/dio/dio_client.dart';
-import 'package:saay_user/features/home/screens/home_screen.dart';
-import 'package:saay_user/main.dart';
+import 'package:enjaz_user/data/datasource/remote/dio/dio_client.dart';
+import 'package:enjaz_user/features/home/screens/home_screen.dart';
+import 'package:enjaz_user/main.dart';
 import 'package:flutter/material.dart';
-import 'package:saay_user/utill/app_constants.dart';
+import 'package:enjaz_user/utill/app_constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class LocalizationProvider extends ChangeNotifier {

@@ -1,9 +1,9 @@
-import 'package:saay_user/common/models/config_model.dart';
-import 'package:saay_user/features/checkout/providers/checkout_provider.dart';
-import 'package:saay_user/features/splash/providers/splash_provider.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/utill/styles.dart';
-import 'package:saay_user/common/widgets/custom_image_widget.dart';
+import 'package:enjaz_user/common/models/config_model.dart';
+import 'package:enjaz_user/features/checkout/providers/checkout_provider.dart';
+import 'package:enjaz_user/features/splash/providers/splash_provider.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/styles.dart';
+import 'package:enjaz_user/common/widgets/custom_image_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

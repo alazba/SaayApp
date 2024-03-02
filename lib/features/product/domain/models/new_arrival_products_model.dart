@@ -1,4 +1,4 @@
-import 'package:saay_user/common/models/product_model.dart';
+import 'package:enjaz_user/common/models/product_model.dart';
 
 class NewArrivalProductsModel {
   int? totalSize;

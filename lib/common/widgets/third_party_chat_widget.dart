@@ -1,8 +1,8 @@
-import 'package:saay_user/common/models/config_model.dart';
-import 'package:saay_user/main.dart';
-import 'package:saay_user/features/splash/providers/splash_provider.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/utill/images.dart';
+import 'package:enjaz_user/common/models/config_model.dart';
+import 'package:enjaz_user/main.dart';
+import 'package:enjaz_user/features/splash/providers/splash_provider.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/images.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

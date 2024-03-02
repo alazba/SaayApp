@@ -1,13 +1,13 @@
 import 'package:dotted_border/dotted_border.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/features/coupon/providers/coupon_provider.dart';
-import 'package:saay_user/provider/localization_provider.dart';
-import 'package:saay_user/features/splash/providers/splash_provider.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/utill/images.dart';
-import 'package:saay_user/utill/styles.dart';
-import 'package:saay_user/common/widgets/custom_asset_image_widget.dart';
-import 'package:saay_user/helper/custom_snackbar_helper.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/features/coupon/providers/coupon_provider.dart';
+import 'package:enjaz_user/provider/localization_provider.dart';
+import 'package:enjaz_user/features/splash/providers/splash_provider.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/images.dart';
+import 'package:enjaz_user/utill/styles.dart';
+import 'package:enjaz_user/common/widgets/custom_asset_image_widget.dart';
+import 'package:enjaz_user/helper/custom_snackbar_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

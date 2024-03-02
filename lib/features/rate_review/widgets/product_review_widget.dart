@@ -1,20 +1,20 @@
-import 'package:saay_user/common/enums/footer_type_enum.dart';
-import 'package:saay_user/features/rate_review/providers/rate_review_provider.dart';
-import 'package:saay_user/helper/responsive_helper.dart';
-import 'package:saay_user/common/widgets/footer_web_widget.dart';
+import 'package:enjaz_user/common/enums/footer_type_enum.dart';
+import 'package:enjaz_user/features/rate_review/providers/rate_review_provider.dart';
+import 'package:enjaz_user/helper/responsive_helper.dart';
+import 'package:enjaz_user/common/widgets/footer_web_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:saay_user/common/models/review_body_model.dart';
-import 'package:saay_user/common/models/order_details_model.dart';
-import 'package:saay_user/helper/price_converter_helper.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/features/splash/providers/splash_provider.dart';
-import 'package:saay_user/utill/color_resources.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/utill/images.dart';
-import 'package:saay_user/utill/styles.dart';
-import 'package:saay_user/common/widgets/custom_button_widget.dart';
-import 'package:saay_user/helper/custom_snackbar_helper.dart';
-import 'package:saay_user/common/widgets/custom_text_field_widget.dart';
+import 'package:enjaz_user/common/models/review_body_model.dart';
+import 'package:enjaz_user/common/models/order_details_model.dart';
+import 'package:enjaz_user/helper/price_converter_helper.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/features/splash/providers/splash_provider.dart';
+import 'package:enjaz_user/utill/color_resources.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/images.dart';
+import 'package:enjaz_user/utill/styles.dart';
+import 'package:enjaz_user/common/widgets/custom_button_widget.dart';
+import 'package:enjaz_user/helper/custom_snackbar_helper.dart';
+import 'package:enjaz_user/common/widgets/custom_text_field_widget.dart';
 import 'package:provider/provider.dart';
 
 class ProductReviewWidget extends StatelessWidget {

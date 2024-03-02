@@ -1,16 +1,16 @@
 import 'dart:io';
 import 'dart:typed_data';
-import 'package:saay_user/helper/responsive_helper.dart';
+import 'package:enjaz_user/helper/responsive_helper.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:http/http.dart' as http;
 
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:saay_user/data/datasource/remote/dio/dio_client.dart';
-import 'package:saay_user/data/datasource/remote/exception/api_error_handler.dart';
-import 'package:saay_user/common/models/api_response_model.dart';
-import 'package:saay_user/common/models/userinfo_model.dart';
-import 'package:saay_user/utill/app_constants.dart';
+import 'package:enjaz_user/data/datasource/remote/dio/dio_client.dart';
+import 'package:enjaz_user/data/datasource/remote/exception/api_error_handler.dart';
+import 'package:enjaz_user/common/models/api_response_model.dart';
+import 'package:enjaz_user/common/models/userinfo_model.dart';
+import 'package:enjaz_user/utill/app_constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ProfileRepo {

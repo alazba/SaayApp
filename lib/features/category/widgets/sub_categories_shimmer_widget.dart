@@ -1,4 +1,4 @@
-import 'package:saay_user/features/category/providers/category_provider.dart';
+import 'package:enjaz_user/features/category/providers/category_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shimmer_animation/shimmer_animation.dart';

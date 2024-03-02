@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:saay_user/utill/color_resources.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/utill/styles.dart';
+import 'package:enjaz_user/utill/color_resources.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/styles.dart';
 
 class CustomStepperWidget extends StatelessWidget {
   final bool isActive;

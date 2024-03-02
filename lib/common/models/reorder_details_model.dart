@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:saay_user/common/models/order_details_model.dart';
-import 'package:saay_user/common/models/product_model.dart';
+import 'package:enjaz_user/common/models/order_details_model.dart';
+import 'package:enjaz_user/common/models/product_model.dart';
 
 class ReOrderDetailsModel {
   final List<OrderDetailsModel>? orderDetails;

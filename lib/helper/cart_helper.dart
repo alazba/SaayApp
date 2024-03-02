@@ -1,6 +1,6 @@
-import 'package:saay_user/common/models/cart_model.dart';
-import 'package:saay_user/common/models/product_model.dart';
-import 'package:saay_user/helper/price_converter_helper.dart';
+import 'package:enjaz_user/common/models/cart_model.dart';
+import 'package:enjaz_user/common/models/product_model.dart';
+import 'package:enjaz_user/helper/price_converter_helper.dart';
 
 class CartHelper {
   static CartModel? getCartModel(Product product,

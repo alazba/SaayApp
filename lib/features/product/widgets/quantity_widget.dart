@@ -1,12 +1,12 @@
-import 'package:saay_user/common/models/cart_model.dart';
-import 'package:saay_user/helper/responsive_helper.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/features/cart/providers/cart_provider.dart';
-import 'package:saay_user/features/product/providers/product_provider.dart';
-import 'package:saay_user/helper/custom_snackbar_helper.dart';
-import 'package:saay_user/utill/color_resources.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/utill/styles.dart';
+import 'package:enjaz_user/common/models/cart_model.dart';
+import 'package:enjaz_user/helper/responsive_helper.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/features/cart/providers/cart_provider.dart';
+import 'package:enjaz_user/features/product/providers/product_provider.dart';
+import 'package:enjaz_user/helper/custom_snackbar_helper.dart';
+import 'package:enjaz_user/utill/color_resources.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

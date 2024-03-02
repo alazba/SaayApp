@@ -1,10 +1,10 @@
-import 'package:saay_user/common/widgets/custom_image_widget.dart';
-import 'package:saay_user/utill/dimensions.dart';
+import 'package:enjaz_user/common/widgets/custom_image_widget.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
 import 'package:flutter/material.dart';
-import 'package:saay_user/features/splash/providers/splash_provider.dart';
-import 'package:saay_user/utill/images.dart';
-import 'package:saay_user/utill/routes.dart';
-import 'package:saay_user/common/widgets/menu_bar.dart';
+import 'package:enjaz_user/features/splash/providers/splash_provider.dart';
+import 'package:enjaz_user/utill/images.dart';
+import 'package:enjaz_user/utill/routes.dart';
+import 'package:enjaz_user/common/widgets/menu_bar.dart';
 import 'package:provider/provider.dart';
 
 class MainAppBarWidget extends StatelessWidget implements PreferredSizeWidget {

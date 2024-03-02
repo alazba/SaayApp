@@ -2,17 +2,17 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:connectivity/connectivity.dart';
-import 'package:saay_user/helper/responsive_helper.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/main.dart';
-import 'package:saay_user/features/auth/providers/auth_provider.dart';
-import 'package:saay_user/features/cart/providers/cart_provider.dart';
-import 'package:saay_user/provider/language_provider.dart';
-import 'package:saay_user/features/splash/providers/splash_provider.dart';
-import 'package:saay_user/utill/app_constants.dart';
-import 'package:saay_user/utill/images.dart';
-import 'package:saay_user/utill/routes.dart';
-import 'package:saay_user/utill/styles.dart';
+import 'package:enjaz_user/helper/responsive_helper.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/main.dart';
+import 'package:enjaz_user/features/auth/providers/auth_provider.dart';
+import 'package:enjaz_user/features/cart/providers/cart_provider.dart';
+import 'package:enjaz_user/provider/language_provider.dart';
+import 'package:enjaz_user/features/splash/providers/splash_provider.dart';
+import 'package:enjaz_user/utill/app_constants.dart';
+import 'package:enjaz_user/utill/images.dart';
+import 'package:enjaz_user/utill/routes.dart';
+import 'package:enjaz_user/utill/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

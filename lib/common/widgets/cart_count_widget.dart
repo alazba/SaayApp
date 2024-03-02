@@ -1,6 +1,6 @@
-import 'package:saay_user/common/widgets/text_hover_widget.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/utill/styles.dart';
+import 'package:enjaz_user/common/widgets/text_hover_widget.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/styles.dart';
 import 'package:flutter/material.dart';
 
 class CartCountWidget extends StatelessWidget {

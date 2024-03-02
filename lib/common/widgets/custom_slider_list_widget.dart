@@ -1,7 +1,7 @@
-import 'package:saay_user/features/home/widgets/arrow_icon_button_widget.dart';
-import 'package:saay_user/helper/responsive_helper.dart';
-import 'package:saay_user/main.dart';
-import 'package:saay_user/utill/dimensions.dart';
+import 'package:enjaz_user/features/home/widgets/arrow_icon_button_widget.dart';
+import 'package:enjaz_user/helper/responsive_helper.dart';
+import 'package:enjaz_user/main.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
 import 'package:flutter/material.dart';
 
 class CustomSliderListWidget extends StatefulWidget {

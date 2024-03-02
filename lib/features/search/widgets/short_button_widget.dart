@@ -1,6 +1,6 @@
-import 'package:saay_user/features/category/providers/category_provider.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/utill/styles.dart';
+import 'package:enjaz_user/features/category/providers/category_provider.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

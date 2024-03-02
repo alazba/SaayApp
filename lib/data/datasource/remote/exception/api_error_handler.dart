@@ -1,11 +1,11 @@
 // ignore_for_file: empty_catches
 
 import 'package:dio/dio.dart';
-import 'package:saay_user/common/models/error_response_model.dart';
-import 'package:saay_user/common/enums/app_mode.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/main.dart';
-import 'package:saay_user/utill/app_constants.dart';
+import 'package:enjaz_user/common/models/error_response_model.dart';
+import 'package:enjaz_user/common/enums/app_mode.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/main.dart';
+import 'package:enjaz_user/utill/app_constants.dart';
 import 'package:flutter/foundation.dart';
 
 class ApiErrorHandler {

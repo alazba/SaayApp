@@ -1,12 +1,12 @@
-import 'package:saay_user/common/models/product_model.dart';
-import 'package:saay_user/helper/responsive_helper.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/features/auth/providers/auth_provider.dart';
-import 'package:saay_user/features/wishlist/providers/wishlist_provider.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/utill/styles.dart';
-import 'package:saay_user/common/widgets/custom_alert_dialog_widget.dart';
-import 'package:saay_user/helper/custom_snackbar_helper.dart';
+import 'package:enjaz_user/common/models/product_model.dart';
+import 'package:enjaz_user/helper/responsive_helper.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/features/auth/providers/auth_provider.dart';
+import 'package:enjaz_user/features/wishlist/providers/wishlist_provider.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/styles.dart';
+import 'package:enjaz_user/common/widgets/custom_alert_dialog_widget.dart';
+import 'package:enjaz_user/helper/custom_snackbar_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

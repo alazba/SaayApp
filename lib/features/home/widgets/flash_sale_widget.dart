@@ -1,14 +1,14 @@
-import 'package:saay_user/features/flash_sale/widgets/flash_sale_timer_widget.dart';
-import 'package:saay_user/helper/responsive_helper.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/features/flash_sale/providers/flash_sale_provider.dart';
-import 'package:saay_user/provider/localization_provider.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/utill/images.dart';
-import 'package:saay_user/utill/routes.dart';
-import 'package:saay_user/utill/styles.dart';
-import 'package:saay_user/common/widgets/product_card_widget.dart';
-import 'package:saay_user/common/widgets/product_shimmer_widget.dart';
+import 'package:enjaz_user/features/flash_sale/widgets/flash_sale_timer_widget.dart';
+import 'package:enjaz_user/helper/responsive_helper.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/features/flash_sale/providers/flash_sale_provider.dart';
+import 'package:enjaz_user/provider/localization_provider.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/images.dart';
+import 'package:enjaz_user/utill/routes.dart';
+import 'package:enjaz_user/utill/styles.dart';
+import 'package:enjaz_user/common/widgets/product_card_widget.dart';
+import 'package:enjaz_user/common/widgets/product_shimmer_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

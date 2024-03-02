@@ -1,6 +1,6 @@
-import 'package:saay_user/common/enums/footer_type_enum.dart';
-import 'package:saay_user/helper/responsive_helper.dart';
-import 'package:saay_user/common/widgets/footer_web_widget.dart';
+import 'package:enjaz_user/common/enums/footer_type_enum.dart';
+import 'package:enjaz_user/helper/responsive_helper.dart';
+import 'package:enjaz_user/common/widgets/footer_web_widget.dart';
 import 'package:flutter/material.dart';
 
 import 'web_app_bar_widget.dart';

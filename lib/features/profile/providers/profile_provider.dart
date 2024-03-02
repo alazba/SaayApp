@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:saay_user/common/models/api_response_model.dart';
-import 'package:saay_user/common/models/response_model.dart';
-import 'package:saay_user/common/models/userinfo_model.dart';
-import 'package:saay_user/features/profile/domain/reposotories/profile_repo.dart';
-import 'package:saay_user/helper/api_checker_helper.dart';
+import 'package:enjaz_user/common/models/api_response_model.dart';
+import 'package:enjaz_user/common/models/response_model.dart';
+import 'package:enjaz_user/common/models/userinfo_model.dart';
+import 'package:enjaz_user/features/profile/domain/reposotories/profile_repo.dart';
+import 'package:enjaz_user/helper/api_checker_helper.dart';
 import 'package:http/http.dart' as http;
 import 'package:image_picker/image_picker.dart';
 

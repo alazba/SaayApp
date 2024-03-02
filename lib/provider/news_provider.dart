@@ -1,8 +1,8 @@
-import 'package:saay_user/common/models/api_response_model.dart';
-import 'package:saay_user/common/reposotories/news_letter_repo.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/main.dart';
-import 'package:saay_user/helper/custom_snackbar_helper.dart';
+import 'package:enjaz_user/common/models/api_response_model.dart';
+import 'package:enjaz_user/common/reposotories/news_letter_repo.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/main.dart';
+import 'package:enjaz_user/helper/custom_snackbar_helper.dart';
 import 'package:flutter/material.dart';
 
 class NewsLetterProvider extends ChangeNotifier {

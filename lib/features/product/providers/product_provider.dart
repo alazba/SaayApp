@@ -1,14 +1,14 @@
-import 'package:saay_user/common/enums/product_filter_type_enum.dart';
-import 'package:saay_user/common/models/api_response_model.dart';
-import 'package:saay_user/common/models/cart_model.dart';
-import 'package:saay_user/common/models/product_details_model.dart';
-import 'package:saay_user/common/models/product_model.dart';
-import 'package:saay_user/common/reposotories/product_repo.dart';
-import 'package:saay_user/features/product/domain/models/new_arrival_products_model.dart';
-import 'package:saay_user/helper/api_checker_helper.dart';
-import 'package:saay_user/helper/custom_snackbar_helper.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/main.dart';
+import 'package:enjaz_user/common/enums/product_filter_type_enum.dart';
+import 'package:enjaz_user/common/models/api_response_model.dart';
+import 'package:enjaz_user/common/models/cart_model.dart';
+import 'package:enjaz_user/common/models/product_details_model.dart';
+import 'package:enjaz_user/common/models/product_model.dart';
+import 'package:enjaz_user/common/reposotories/product_repo.dart';
+import 'package:enjaz_user/features/product/domain/models/new_arrival_products_model.dart';
+import 'package:enjaz_user/helper/api_checker_helper.dart';
+import 'package:enjaz_user/helper/custom_snackbar_helper.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/main.dart';
 import 'package:flutter/material.dart';
 
 class ProductProvider extends ChangeNotifier {

@@ -1,11 +1,11 @@
-import 'package:saay_user/common/widgets/custom_directionality_widget.dart';
-import 'package:saay_user/features/checkout/providers/checkout_provider.dart';
+import 'package:enjaz_user/common/widgets/custom_directionality_widget.dart';
+import 'package:enjaz_user/features/checkout/providers/checkout_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:saay_user/helper/price_converter_helper.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/features/splash/providers/splash_provider.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/utill/styles.dart';
+import 'package:enjaz_user/helper/price_converter_helper.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/features/splash/providers/splash_provider.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/styles.dart';
 import 'package:provider/provider.dart';
 
 class SelectDeliveryTypeWidget extends StatelessWidget {

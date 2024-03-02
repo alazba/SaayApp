@@ -1,12 +1,12 @@
-import 'package:saay_user/common/widgets/rating_bar_widget.dart';
-import 'package:saay_user/features/product/providers/product_provider.dart';
-import 'package:saay_user/features/product/widgets/rating_line_widget.dart';
-import 'package:saay_user/features/product/widgets/review_widget.dart';
-import 'package:saay_user/features/rate_review/providers/rate_review_provider.dart';
-import 'package:saay_user/helper/responsive_helper.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/utill/styles.dart';
+import 'package:enjaz_user/common/widgets/rating_bar_widget.dart';
+import 'package:enjaz_user/features/product/providers/product_provider.dart';
+import 'package:enjaz_user/features/product/widgets/rating_line_widget.dart';
+import 'package:enjaz_user/features/product/widgets/review_widget.dart';
+import 'package:enjaz_user/features/rate_review/providers/rate_review_provider.dart';
+import 'package:enjaz_user/helper/responsive_helper.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

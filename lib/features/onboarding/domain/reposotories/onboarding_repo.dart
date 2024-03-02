@@ -1,11 +1,11 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:saay_user/data/datasource/remote/dio/dio_client.dart';
-import 'package:saay_user/data/datasource/remote/exception/api_error_handler.dart';
-import 'package:saay_user/common/models/api_response_model.dart';
-import 'package:saay_user/common/models/onboarding_model.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/utill/images.dart';
+import 'package:enjaz_user/data/datasource/remote/dio/dio_client.dart';
+import 'package:enjaz_user/data/datasource/remote/exception/api_error_handler.dart';
+import 'package:enjaz_user/common/models/api_response_model.dart';
+import 'package:enjaz_user/common/models/onboarding_model.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/utill/images.dart';
 
 class OnBoardingRepo {
   final DioClient? dioClient;

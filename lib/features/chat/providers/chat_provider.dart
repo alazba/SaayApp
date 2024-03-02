@@ -1,8 +1,8 @@
-import 'package:saay_user/common/models/api_response_model.dart';
-import 'package:saay_user/features/chat/domain/models/chat_model.dart';
-import 'package:saay_user/common/models/order_model.dart';
-import 'package:saay_user/features/chat/domain/reposotories/chat_repo.dart';
-import 'package:saay_user/helper/api_checker_helper.dart';
+import 'package:enjaz_user/common/models/api_response_model.dart';
+import 'package:enjaz_user/features/chat/domain/models/chat_model.dart';
+import 'package:enjaz_user/common/models/order_model.dart';
+import 'package:enjaz_user/features/chat/domain/reposotories/chat_repo.dart';
+import 'package:enjaz_user/helper/api_checker_helper.dart';
 import 'package:http/http.dart' as http;
 
 import 'package:flutter/material.dart';

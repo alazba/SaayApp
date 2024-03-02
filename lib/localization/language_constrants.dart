@@ -1,4 +1,4 @@
-import 'package:saay_user/localization/app_localization.dart';
+import 'package:enjaz_user/localization/app_localization.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 

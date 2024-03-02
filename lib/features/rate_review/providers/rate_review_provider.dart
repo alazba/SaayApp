@@ -1,12 +1,12 @@
-import 'package:saay_user/common/models/api_response_model.dart';
-import 'package:saay_user/common/models/order_details_model.dart';
-import 'package:saay_user/common/models/response_model.dart';
-import 'package:saay_user/common/models/review_body_model.dart';
-import 'package:saay_user/common/reposotories/product_repo.dart';
-import 'package:saay_user/features/product/domain/models/review_model.dart';
-import 'package:saay_user/helper/api_checker_helper.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/main.dart';
+import 'package:enjaz_user/common/models/api_response_model.dart';
+import 'package:enjaz_user/common/models/order_details_model.dart';
+import 'package:enjaz_user/common/models/response_model.dart';
+import 'package:enjaz_user/common/models/review_body_model.dart';
+import 'package:enjaz_user/common/reposotories/product_repo.dart';
+import 'package:enjaz_user/features/product/domain/models/review_model.dart';
+import 'package:enjaz_user/helper/api_checker_helper.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/main.dart';
 import 'package:flutter/material.dart';
 
 class RateReviewProvider extends ChangeNotifier {

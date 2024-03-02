@@ -1,13 +1,13 @@
-import 'package:saay_user/features/rate_review/providers/rate_review_provider.dart';
+import 'package:enjaz_user/features/rate_review/providers/rate_review_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:saay_user/common/models/order_details_model.dart';
-import 'package:saay_user/common/models/order_model.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/utill/styles.dart';
-import 'package:saay_user/common/widgets/custom_app_bar_widget.dart';
-import 'package:saay_user/features/rate_review/widgets/deliver_man_review_widget.dart';
-import 'package:saay_user/features/rate_review/widgets/product_review_widget.dart';
+import 'package:enjaz_user/common/models/order_details_model.dart';
+import 'package:enjaz_user/common/models/order_model.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/styles.dart';
+import 'package:enjaz_user/common/widgets/custom_app_bar_widget.dart';
+import 'package:enjaz_user/features/rate_review/widgets/deliver_man_review_widget.dart';
+import 'package:enjaz_user/features/rate_review/widgets/product_review_widget.dart';
 import 'package:provider/provider.dart';
 
 class RateReviewScreen extends StatefulWidget {

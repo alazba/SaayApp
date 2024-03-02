@@ -1,10 +1,10 @@
-import 'package:saay_user/helper/price_converter_helper.dart';
-import 'package:saay_user/helper/responsive_helper.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/features/order/providers/order_provider.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/utill/styles.dart';
-import 'package:saay_user/features/cart/widgets/cart_item_widget.dart';
+import 'package:enjaz_user/helper/price_converter_helper.dart';
+import 'package:enjaz_user/helper/responsive_helper.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/features/order/providers/order_provider.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/styles.dart';
+import 'package:enjaz_user/features/cart/widgets/cart_item_widget.dart';
 import 'package:flutter/material.dart';
 
 class ItemPriceWidget extends StatelessWidget {

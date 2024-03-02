@@ -1,10 +1,10 @@
-import 'package:saay_user/common/models/product_details_model.dart';
-import 'package:saay_user/helper/responsive_helper.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/utill/styles.dart';
-import 'package:saay_user/common/widgets/custom_single_child_list_widget.dart';
-import 'package:saay_user/common/widgets/product_card_widget.dart';
+import 'package:enjaz_user/common/models/product_details_model.dart';
+import 'package:enjaz_user/helper/responsive_helper.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/styles.dart';
+import 'package:enjaz_user/common/widgets/custom_single_child_list_widget.dart';
+import 'package:enjaz_user/common/widgets/product_card_widget.dart';
 import 'package:flutter/material.dart';
 
 class RelatedProductWidget extends StatelessWidget {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:saay_user/common/models/api_response_model.dart';
-import 'package:saay_user/features/notification/domain/models/notification_model.dart';
-import 'package:saay_user/features/notification/domain/reposotories/notification_repo.dart';
-import 'package:saay_user/helper/api_checker_helper.dart';
+import 'package:enjaz_user/common/models/api_response_model.dart';
+import 'package:enjaz_user/features/notification/domain/models/notification_model.dart';
+import 'package:enjaz_user/features/notification/domain/reposotories/notification_repo.dart';
+import 'package:enjaz_user/helper/api_checker_helper.dart';
 
 class NotificationProvider extends ChangeNotifier {
   final NotificationRepo? notificationRepo;

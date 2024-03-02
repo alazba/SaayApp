@@ -1,13 +1,13 @@
-import 'package:saay_user/common/widgets/custom_app_bar_widget.dart';
-import 'package:saay_user/utill/styles.dart';
+import 'package:enjaz_user/common/widgets/custom_app_bar_widget.dart';
+import 'package:enjaz_user/utill/styles.dart';
 import 'package:flutter/material.dart';
-import 'package:saay_user/helper/responsive_helper.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/features/search/providers/search_provider.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/utill/images.dart';
-import 'package:saay_user/utill/routes.dart';
-import 'package:saay_user/common/widgets/custom_text_field_widget.dart';
+import 'package:enjaz_user/helper/responsive_helper.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/features/search/providers/search_provider.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/images.dart';
+import 'package:enjaz_user/utill/routes.dart';
+import 'package:enjaz_user/common/widgets/custom_text_field_widget.dart';
 import 'package:provider/provider.dart';
 
 class SearchScreen extends StatefulWidget {

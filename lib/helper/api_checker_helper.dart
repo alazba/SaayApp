@@ -1,10 +1,10 @@
-import 'package:saay_user/common/models/api_response_model.dart';
-import 'package:saay_user/common/models/error_response_model.dart';
-import 'package:saay_user/main.dart';
-import 'package:saay_user/utill/routes.dart';
-import 'package:saay_user/helper/custom_snackbar_helper.dart';
+import 'package:enjaz_user/common/models/api_response_model.dart';
+import 'package:enjaz_user/common/models/error_response_model.dart';
+import 'package:enjaz_user/main.dart';
+import 'package:enjaz_user/utill/routes.dart';
+import 'package:enjaz_user/helper/custom_snackbar_helper.dart';
 import 'package:flutter/material.dart';
-import 'package:saay_user/features/splash/providers/splash_provider.dart';
+import 'package:enjaz_user/features/splash/providers/splash_provider.dart';
 import 'package:provider/provider.dart';
 
 class ApiCheckerHelper {

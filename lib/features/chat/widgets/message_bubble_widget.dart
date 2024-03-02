@@ -1,12 +1,12 @@
-import 'package:saay_user/features/chat/domain/models/chat_model.dart';
-import 'package:saay_user/features/chat/widgets/image_dialog_widget.dart';
-import 'package:saay_user/helper/date_converter_helper.dart';
-import 'package:saay_user/helper/responsive_helper.dart';
-import 'package:saay_user/features/profile/providers/profile_provider.dart';
-import 'package:saay_user/features/splash/providers/splash_provider.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/utill/images.dart';
-import 'package:saay_user/utill/styles.dart';
+import 'package:enjaz_user/features/chat/domain/models/chat_model.dart';
+import 'package:enjaz_user/features/chat/widgets/image_dialog_widget.dart';
+import 'package:enjaz_user/helper/date_converter_helper.dart';
+import 'package:enjaz_user/helper/responsive_helper.dart';
+import 'package:enjaz_user/features/profile/providers/profile_provider.dart';
+import 'package:enjaz_user/features/splash/providers/splash_provider.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/images.dart';
+import 'package:enjaz_user/utill/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

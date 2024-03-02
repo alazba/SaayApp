@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:saay_user/provider/theme_provider.dart';
+import 'package:enjaz_user/provider/theme_provider.dart';
 import 'package:provider/provider.dart';
 
 class ColorResources {

@@ -1,11 +1,11 @@
 import 'dart:convert';
 
-import 'package:saay_user/common/models/api_response_model.dart';
-import 'package:saay_user/common/models/category_model.dart';
-import 'package:saay_user/common/models/feature_category_model.dart';
-import 'package:saay_user/common/models/product_model.dart';
-import 'package:saay_user/features/category/domain/reposotories/category_repo.dart';
-import 'package:saay_user/helper/api_checker_helper.dart';
+import 'package:enjaz_user/common/models/api_response_model.dart';
+import 'package:enjaz_user/common/models/category_model.dart';
+import 'package:enjaz_user/common/models/feature_category_model.dart';
+import 'package:enjaz_user/common/models/product_model.dart';
+import 'package:enjaz_user/features/category/domain/reposotories/category_repo.dart';
+import 'package:enjaz_user/helper/api_checker_helper.dart';
 import 'package:flutter/material.dart';
 
 class CategoryProvider extends ChangeNotifier {

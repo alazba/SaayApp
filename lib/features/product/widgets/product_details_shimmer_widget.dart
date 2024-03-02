@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:saay_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
 import 'package:shimmer_animation/shimmer_animation.dart';
 
 class ProductDetailsShimmerWidget extends StatelessWidget {

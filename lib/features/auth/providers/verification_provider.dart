@@ -1,11 +1,11 @@
 import 'dart:async';
 
-import 'package:saay_user/features/auth/domain/enums/verification_type_enum.dart';
-import 'package:saay_user/common/models/api_response_model.dart';
-import 'package:saay_user/common/models/response_model.dart';
-import 'package:saay_user/features/auth/domain/reposotories/auth_repo.dart';
-import 'package:saay_user/main.dart';
-import 'package:saay_user/features/splash/providers/splash_provider.dart';
+import 'package:enjaz_user/features/auth/domain/enums/verification_type_enum.dart';
+import 'package:enjaz_user/common/models/api_response_model.dart';
+import 'package:enjaz_user/common/models/response_model.dart';
+import 'package:enjaz_user/features/auth/domain/reposotories/auth_repo.dart';
+import 'package:enjaz_user/main.dart';
+import 'package:enjaz_user/features/splash/providers/splash_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../../helper/api_checker_helper.dart';

@@ -1,9 +1,9 @@
-import 'package:saay_user/common/enums/search_short_by_enum.dart';
+import 'package:enjaz_user/common/enums/search_short_by_enum.dart';
 import 'package:flutter/material.dart';
-import 'package:saay_user/common/models/api_response_model.dart';
-import 'package:saay_user/common/models/product_model.dart';
-import 'package:saay_user/features/search/domain/reposotories/search_repo.dart';
-import 'package:saay_user/helper/api_checker_helper.dart';
+import 'package:enjaz_user/common/models/api_response_model.dart';
+import 'package:enjaz_user/common/models/product_model.dart';
+import 'package:enjaz_user/features/search/domain/reposotories/search_repo.dart';
+import 'package:enjaz_user/helper/api_checker_helper.dart';
 
 class SearchProvider with ChangeNotifier {
   final SearchRepo? searchRepo;

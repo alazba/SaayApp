@@ -1,10 +1,10 @@
 import 'dart:async';
-import 'package:saay_user/common/enums/product_filter_type_enum.dart';
-import 'package:saay_user/common/models/api_response_model.dart';
-import 'package:saay_user/features/flash_sale/domain/models/flash_sale_model.dart';
-import 'package:saay_user/common/reposotories/product_repo.dart';
-import 'package:saay_user/helper/api_checker_helper.dart';
-import 'package:saay_user/helper/date_converter_helper.dart';
+import 'package:enjaz_user/common/enums/product_filter_type_enum.dart';
+import 'package:enjaz_user/common/models/api_response_model.dart';
+import 'package:enjaz_user/features/flash_sale/domain/models/flash_sale_model.dart';
+import 'package:enjaz_user/common/reposotories/product_repo.dart';
+import 'package:enjaz_user/helper/api_checker_helper.dart';
+import 'package:enjaz_user/helper/date_converter_helper.dart';
 import 'package:flutter/cupertino.dart';
 
 class FlashSaleProvider extends ChangeNotifier {

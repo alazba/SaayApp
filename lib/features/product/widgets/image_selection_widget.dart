@@ -1,10 +1,10 @@
-import 'package:saay_user/common/models/product_model.dart';
-import 'package:saay_user/helper/responsive_helper.dart';
-import 'package:saay_user/features/cart/providers/cart_provider.dart';
-import 'package:saay_user/features/product/providers/product_provider.dart';
-import 'package:saay_user/features/splash/providers/splash_provider.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/common/widgets/custom_image_widget.dart';
+import 'package:enjaz_user/common/models/product_model.dart';
+import 'package:enjaz_user/helper/responsive_helper.dart';
+import 'package:enjaz_user/features/cart/providers/cart_provider.dart';
+import 'package:enjaz_user/features/product/providers/product_provider.dart';
+import 'package:enjaz_user/features/splash/providers/splash_provider.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/common/widgets/custom_image_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:saay_user/common/enums/footer_type_enum.dart';
-import 'package:saay_user/common/widgets/custom_app_bar_widget.dart';
-import 'package:saay_user/common/widgets/custom_web_title_widget.dart';
-import 'package:saay_user/common/widgets/footer_web_widget.dart';
-import 'package:saay_user/common/widgets/no_data_screen.dart';
-import 'package:saay_user/features/cart/providers/cart_provider.dart';
-import 'package:saay_user/features/cart/widgets/button_view_widget.dart';
-import 'package:saay_user/features/cart/widgets/cart_details_widget.dart';
-import 'package:saay_user/features/cart/widgets/cart_product_list_widget.dart';
-import 'package:saay_user/features/checkout/providers/checkout_provider.dart';
-import 'package:saay_user/features/coupon/providers/coupon_provider.dart';
-import 'package:saay_user/features/splash/providers/splash_provider.dart';
-import 'package:saay_user/helper/responsive_helper.dart';
-import 'package:saay_user/localization/language_constrants.dart';
-import 'package:saay_user/utill/dimensions.dart';
-import 'package:saay_user/utill/images.dart';
+import 'package:enjaz_user/common/enums/footer_type_enum.dart';
+import 'package:enjaz_user/common/widgets/custom_app_bar_widget.dart';
+import 'package:enjaz_user/common/widgets/custom_web_title_widget.dart';
+import 'package:enjaz_user/common/widgets/footer_web_widget.dart';
+import 'package:enjaz_user/common/widgets/no_data_screen.dart';
+import 'package:enjaz_user/features/cart/providers/cart_provider.dart';
+import 'package:enjaz_user/features/cart/widgets/button_view_widget.dart';
+import 'package:enjaz_user/features/cart/widgets/cart_details_widget.dart';
+import 'package:enjaz_user/features/cart/widgets/cart_product_list_widget.dart';
+import 'package:enjaz_user/features/checkout/providers/checkout_provider.dart';
+import 'package:enjaz_user/features/coupon/providers/coupon_provider.dart';
+import 'package:enjaz_user/features/splash/providers/splash_provider.dart';
+import 'package:enjaz_user/helper/responsive_helper.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
+import 'package:enjaz_user/utill/dimensions.dart';
+import 'package:enjaz_user/utill/images.dart';
 import 'package:provider/provider.dart';
 
 class CartScreen extends StatelessWidget {

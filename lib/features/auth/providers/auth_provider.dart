@@ -2,19 +2,19 @@
 
 import 'dart:async';
 
-import 'package:saay_user/features/auth/domain/enums/verification_type_enum.dart';
-import 'package:saay_user/features/auth/domain/models/social_login_model.dart';
-import 'package:saay_user/common/models/api_response_model.dart';
-import 'package:saay_user/common/models/error_response_model.dart';
-import 'package:saay_user/common/models/response_model.dart';
-import 'package:saay_user/common/models/userinfo_model.dart';
-import 'package:saay_user/features/auth/domain/reposotories/auth_repo.dart';
-import 'package:saay_user/features/auth/providers/verification_provider.dart';
-import 'package:saay_user/main.dart';
-import 'package:saay_user/features/cart/providers/cart_provider.dart';
-import 'package:saay_user/features/profile/providers/profile_provider.dart';
-import 'package:saay_user/features/splash/providers/splash_provider.dart';
-import 'package:saay_user/features/wishlist/providers/wishlist_provider.dart';
+import 'package:enjaz_user/features/auth/domain/enums/verification_type_enum.dart';
+import 'package:enjaz_user/features/auth/domain/models/social_login_model.dart';
+import 'package:enjaz_user/common/models/api_response_model.dart';
+import 'package:enjaz_user/common/models/error_response_model.dart';
+import 'package:enjaz_user/common/models/response_model.dart';
+import 'package:enjaz_user/common/models/userinfo_model.dart';
+import 'package:enjaz_user/features/auth/domain/reposotories/auth_repo.dart';
+import 'package:enjaz_user/features/auth/providers/verification_provider.dart';
+import 'package:enjaz_user/main.dart';
+import 'package:enjaz_user/features/cart/providers/cart_provider.dart';
+import 'package:enjaz_user/features/profile/providers/profile_provider.dart';
+import 'package:enjaz_user/features/splash/providers/splash_provider.dart';
+import 'package:enjaz_user/features/wishlist/providers/wishlist_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';

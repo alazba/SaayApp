@@ -1,6 +1,6 @@
 import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
-import 'package:saay_user/localization/language_constrants.dart';
+import 'package:enjaz_user/localization/language_constrants.dart';
 
 class NetworkInfoHelper {
   final Connectivity connectivity;
