@@ -148,7 +148,7 @@
   "coupon_discount": "خصم القسيمة",
   "valid_until": "صالح حتى",
   "order": "طلب",
-  "cancel": "يلغي",
+  "cancel": "الغاء",
   "recent_search": "البحث الأخير",
   "remove_all": "حذف الكل",
   "product_found": "تم العثور على المنتجات",
@@ -436,7 +436,7 @@
   "back_press_again_to_go_back": "اضغط مرة أخرى للعودة",
   "no_product_found": "لم يتم العثور على منتج",
   "product_not_available": "المنتج غير متوفر",
-  "remove": "يزيل",
+  "remove": "ازالة",
   "do_you_want_to_close_and": "هل تريد الإغلاق والخروج من التطبيق؟",
   "close_the_app": "أغلق التطبيق",
   "exit": "مخرج"
