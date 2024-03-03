@@ -63,7 +63,7 @@ class _BannerWidgetState extends State<BannerWidget> {
     return Column(children: [
       Padding(
         padding: const EdgeInsets.fromLTRB(10, 20, 10, 10),
-        child: TitleWidget(title: getTranslated('banner', context)),
+        // child: TitleWidget(title: getTranslated('banner', context)),
       ),
       Stack(children: [
         SizedBox(
@@ -138,40 +138,40 @@ class _BannerWidgetState extends State<BannerWidget> {
                     : const BannerShimmer();
               },
             )),
-        Consumer<BannerProvider>(builder: (context, banner, child) {
-          return Positioned(
-            right: 35,
-            bottom: 20,
-            top: 20,
-            child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text(
-                  '${_currentSliderValue.toInt() + (_currentSliderValue.toInt() >= _listLength.toInt() ? 0 : 1)}/${_listLength.toInt()}',
-                  style: rubikRegular.copyWith(
-                      color: Theme.of(context).cardColor)),
-              const SizedBox(width: Dimensions.paddingSizeExtraSmall),
-              RotatedBox(
-                quarterTurns: 3,
-                child: SizedBox(
-                  height: 5,
-                  width: 120,
-                  child: ClipRRect(
-                    borderRadius: const BorderRadius.only(
-                        bottomLeft:
-                            Radius.circular(Dimensions.radiusSizeDefault),
-                        topLeft: Radius.circular(Dimensions.radiusSizeDefault)),
-                    child: LinearProgressIndicator(
-                      minHeight: 5,
-                      value: _progressValue,
-                      valueColor: AlwaysStoppedAnimation<Color>(
-                          Theme.of(context).colorScheme.error.withOpacity(0.8)),
-                      backgroundColor: Theme.of(context).cardColor,
-                    ),
-                  ),
-                ),
-              ),
-            ]),
-          );
-        }),
+        // Consumer<BannerProvider>(builder: (context, banner, child) {
+        //   return Positioned(
+        //     right: 35,
+        //     bottom: 20,
+        //     top: 20,
+        //     child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+        //       // Text(
+        //       //     '${_currentSliderValue.toInt() + (_currentSliderValue.toInt() >= _listLength.toInt() ? 0 : 1)}/${_listLength.toInt()}',
+        //       //     style: rubikRegular.copyWith(
+        //       //         color: Theme.of(context).cardColor)),
+        //       const SizedBox(width: Dimensions.paddingSizeExtraSmall),
+        //       RotatedBox(
+        //         quarterTurns: 3,
+        //         child: SizedBox(
+        //           height: 5,
+        //           width: 120,
+        //           child: ClipRRect(
+        //             borderRadius: const BorderRadius.only(
+        //                 bottomLeft:
+        //                     Radius.circular(Dimensions.radiusSizeDefault),
+        //                 topLeft: Radius.circular(Dimensions.radiusSizeDefault)),
+        //             child: LinearProgressIndicator(
+        //               minHeight: 5,
+        //               value: _progressValue,
+        //               valueColor: AlwaysStoppedAnimation<Color>(
+        //                   Theme.of(context).colorScheme.error.withOpacity(0.8)),
+        //               backgroundColor: Theme.of(context).cardColor,
+        //             ),
+        //           ),
+        //         ),
+        //       ),
+        //     ]),
+        //   );
+        // }),
       ]),
     ]);
   }
