@@ -48,11 +48,11 @@ class ProductFilterPopupWidget extends StatelessWidget {
         children: [
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 8),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(Dimensions.radiusSizeDefault),
-              border: Border.all(color: Theme.of(context).primaryColor),
-            ),
-            child: Icon(Icons.filter_list,
+            // decoration: BoxDecoration(
+            //   borderRadius: BorderRadius.circular(Dimensions.radiusSizeDefault),
+            //   border: Border.all(color: Theme.of(context).primaryColor),
+            // ),
+            child: Icon(Icons.menu_open,
                 color: Theme.of(context).primaryColor,
                 size: Dimensions.paddingSizeLarge),
           ),

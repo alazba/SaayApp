@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 ThemeData light = ThemeData(
   fontFamily: AppConstants.fontFamily,
-  primaryColor: const Color.fromARGB(255, 69, 117, 229),
+  primaryColor: Color.fromARGB(255, 0, 76, 255),
   secondaryHeaderColor: const Color(0xFFEFE6FE),
   brightness: Brightness.light,
   cardColor: const Color.fromARGB(255, 255, 255, 255),

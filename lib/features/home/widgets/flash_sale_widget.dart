@@ -66,7 +66,7 @@ class FlashSaleWidget extends StatelessWidget {
                           width: Dimensions.webScreenWidth,
                           padding: const EdgeInsets.only(
                             top: Dimensions.paddingSizeDefault,
-                            bottom: Dimensions.paddingSizeDefault,
+                            bottom: Dimensions.paddingSizeLarge,
                           ),
                           child: SizedBox(
                             height: 170,
@@ -122,8 +122,8 @@ class FlashSaleWidget extends StatelessWidget {
                                   width: 150, height: 115, fit: BoxFit.cover),
                               const Padding(
                                 padding: EdgeInsets.only(
-                                    top: Dimensions.paddingSizeLarge,
-                                    right: Dimensions.paddingSizeLarge),
+                                    top: Dimensions.paddingSizeDefault,
+                                    right: Dimensions.paddingSizeDefault),
                                 child: FlashSaleTimerWidget(),
                               ),
                             ]),

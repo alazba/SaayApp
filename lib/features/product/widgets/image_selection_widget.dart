@@ -43,7 +43,7 @@ class ImageSelectionWidget extends StatelessWidget {
                                       Theme.of(context).primaryColor,
                                       Theme.of(context)
                                           .primaryColor
-                                          .withOpacity(0.3),
+                                          .withOpacity(0.1),
                                     ],
                                     begin: Alignment.topLeft,
                                     end: Alignment.bottomRight,

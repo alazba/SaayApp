@@ -230,22 +230,22 @@ class ProductWishListButton extends StatelessWidget {
         child: Container(
           height: 35,
           width: 35,
-          decoration: BoxDecoration(
-            color: Theme.of(context).cardColor.withOpacity(0.9),
-            border: Border.all(
-                width: 0.6,
-                color: Theme.of(context).hintColor.withOpacity(0.1)),
-            borderRadius: BorderRadius.circular(Dimensions.radiusSizeDefault),
-          ),
+          // decoration: BoxDecoration(
+          //   color: Theme.of(context).cardColor.withOpacity(0.9),
+          //   border: Border.all(
+          //       width: 0.6,
+          //       color: Theme.of(context).hintColor.withOpacity(0.1)),
+          //   borderRadius: BorderRadius.circular(Dimensions.radiusSizeDefault),
+          // ),
           alignment: Alignment.center,
           child: Icon(
               wishListProvider.wishIdList.contains(product.id)
-                  ? Icons.favorite
-                  : Icons.favorite_border,
+                  ? Icons.star
+                  : Icons.star_border,
               color: wishListProvider.wishIdList.contains(product.id)
-                  ? Theme.of(context).primaryColor
-                  : Theme.of(context).primaryColor,
-              size: Dimensions.paddingSizeDefault),
+                  ? const Color.fromARGB(255, 255, 193, 59)
+                  : const Color.fromARGB(255, 255, 193, 59),
+              size: Dimensions.paddingSizeLarge),
         ),
       );
     });
@@ -307,18 +307,20 @@ class ProductImageView extends StatelessWidget {
               if (isVertical)
                 Positioned.fill(
                     child: Padding(
-                  padding: const EdgeInsets.all(Dimensions.paddingSizeSmall),
+                  padding:
+                      const EdgeInsets.all(Dimensions.paddingSizeExtraSmall)
+                          .copyWith(top: isVertical ? 10 : 30),
                   child: Align(
-                    alignment: Alignment.topRight,
+                    alignment: Alignment.topLeft,
                     child: ProductWishListButton(product: product),
                   ),
                 )),
               Positioned.fill(
                   child: Padding(
-                padding: const EdgeInsets.all(Dimensions.paddingSizeSmall)
-                    .copyWith(top: isVertical ? 55 : 10),
+                padding: const EdgeInsets.all(Dimensions.paddingSizeExtraSmall)
+                    .copyWith(top: isVertical ? 35 : 30),
                 child: Align(
-                  alignment: Alignment.topRight,
+                  alignment: Alignment.topLeft,
                   child: InkWell(
                     onTap: () {
                       if (product.variations == null ||
@@ -341,17 +343,17 @@ class ProductImageView extends StatelessWidget {
                       }
                     },
                     child: Container(
-                      height: isExistInCart ? 80 : 35,
+                      height: isExistInCart ? 0 : 35,
                       width: 35,
-                      decoration: BoxDecoration(
-                        color: Theme.of(context).cardColor.withOpacity(0.9),
-                        border: Border.all(
-                            width: 0.6,
-                            color:
-                                Theme.of(context).hintColor.withOpacity(0.2)),
-                        borderRadius:
-                            BorderRadius.circular(Dimensions.radiusSizeDefault),
-                      ),
+                      // decoration: BoxDecoration(
+                      //   color: Theme.of(context).cardColor.withOpacity(0.9),
+                      //   border: Border.all(
+                      //       width: 0.6,
+                      //       color:
+                      //           Theme.of(context).hintColor.withOpacity(0.2)),
+                      //   borderRadius:
+                      //       BorderRadius.circular(Dimensions.radiusSizeDefault),
+                      // ),
                       alignment: Alignment.center,
                       child: isExistInCart
                           ? Column(

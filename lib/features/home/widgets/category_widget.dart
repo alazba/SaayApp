@@ -80,17 +80,17 @@ class CategoryWidget extends StatelessWidget {
                                                   Container(
                                                     width: 65,
                                                     height: 65,
-                                                    decoration: BoxDecoration(
-                                                        borderRadius:
-                                                            const BorderRadius
-                                                                .all(
-                                                                Radius.circular(
-                                                                    10)),
-                                                        border: Border.all(
-                                                            width: .5,
-                                                            color: Theme.of(
-                                                                    context)
-                                                                .dividerColor)),
+                                                    // decoration: BoxDecoration(
+                                                    //     borderRadius:
+                                                    //         const BorderRadius
+                                                    //             .all(
+                                                    //             Radius.circular(
+                                                    //                 10)),
+                                                    //     border: Border.all(
+                                                    //         width: .5,
+                                                    //         color: Theme.of(
+                                                    //                 context)
+                                                    //             .dividerColor)),
                                                     child: ClipRRect(
                                                       borderRadius:
                                                           const BorderRadius
@@ -129,7 +129,7 @@ class CategoryWidget extends StatelessWidget {
                                                             .name!,
                                                         style: rubikMedium.copyWith(
                                                             fontSize: Dimensions
-                                                                .fontSizeSmall),
+                                                                .fontSizeExtraSmall),
                                                         maxLines: 1,
                                                         overflow: TextOverflow
                                                             .ellipsis,
