@@ -1,11 +1,11 @@
-#Tue Mar 05 18:17:07 AST 2024
-base.0=D\:\\Apps\\enjaz\\EnjazApp\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=D\:\\Apps\\enjaz\\EnjazApp\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
-base.2=D\:\\Apps\\enjaz\\EnjazApp\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.3=D\:\\Apps\\enjaz\\EnjazApp\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
-base.4=D\:\\Apps\\enjaz\\EnjazApp\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
-base.5=D\:\\Apps\\enjaz\\EnjazApp\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
-base.6=D\:\\Apps\\enjaz\\EnjazApp\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+#Tue Apr 23 19:59:53 AST 2024
+base.0=C\:\\Users\\Alazba\\Documents\\Apps\\EnjazApp\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\Alazba\\Documents\\Apps\\EnjazApp\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\Alazba\\Documents\\Apps\\EnjazApp\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.3=C\:\\Users\\Alazba\\Documents\\Apps\\EnjazApp\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
+base.4=C\:\\Users\\Alazba\\Documents\\Apps\\EnjazApp\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+base.5=C\:\\Users\\Alazba\\Documents\\Apps\\EnjazApp\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
+base.6=C\:\\Users\\Alazba\\Documents\\Apps\\EnjazApp\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=0/classes.dex

@@ -815,6 +815,7 @@ drawable notification_bg_normal
 drawable notification_bg_normal_pressed
 drawable notification_icon
 drawable notification_icon_background
+drawable notification_iconx
 drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
@@ -1146,6 +1147,7 @@ menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_adaptive_back
 mipmap ic_launcher_adaptive_fore
+mipmap ic_launcher_adaptive_forex
 raw firebase_common_keep
 raw notification
 string abc_action_bar_home_description

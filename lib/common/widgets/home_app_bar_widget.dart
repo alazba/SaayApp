@@ -35,24 +35,24 @@ class HomeAppBarWidget extends StatelessWidget {
               icon: const Icon(Icons.menu, color: Colors.black),
             )
           : null,
-      // title: Consumer<SplashProvider>(
-      //     builder: (context, splash, child) => Row(
-      //           crossAxisAlignment: CrossAxisAlignment.center,
-      //           children: [
-      //             const CustomAssetImageWidget(Images.logo,
-      //                 width: 80, height: 80),
-      //             const SizedBox(width: 10),
-      //             Expanded(
-      //               child: Text(
-      //                 AppConstants.appName,
-      //                 style: rubikBold.copyWith(
-      //                     color: Theme.of(context).primaryColor),
-      //                 maxLines: 1,
-      //                 overflow: TextOverflow.ellipsis,
-      //               ),
-      //             ),
-      //           ],
-      //         )),
+      title: Consumer<SplashProvider>(
+          builder: (context, splash, child) => Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  const CustomAssetImageWidget(Images.logo,
+                      width: 50, height: 50),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: Text(
+                      AppConstants.appName,
+                      style: rubikBold.copyWith(
+                          color: Theme.of(context).primaryColor),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                ],
+              )),
       actions: [
         InkWell(
           borderRadius: BorderRadius.circular(50),

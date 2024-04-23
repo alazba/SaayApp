@@ -23,6 +23,42 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Alazba\\Documents\\Apps\\EnjazApp\\android\\app\\src\\main\\res\\values\\string.xml",
+                    "from": {
+                        "startLines": "2,3,5,4",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "57,109,230,166",
+                        "endColumns": "50,55,62,62",
+                        "endOffsets": "103,160,288,224"
+                    },
+                    "to": {
+                        "startLines": "371,422,423,427",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "24184,29583,29639,29917",
+                        "endColumns": "50,55,62,62",
+                        "endOffsets": "24230,29634,29697,29975"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Alazba\\Documents\\Apps\\EnjazApp\\build\\flutter_inappwebview\\intermediates\\packaged_res\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,11,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,102,153,210,259,306,353,426,502",
+                        "endLines": "2,3,4,5,6,7,10,13,21",
+                        "endColumns": "46,50,56,48,46,46,12,12,12",
+                        "endOffsets": "97,148,205,254,301,348,421,497,949"
+                    },
+                    "to": {
+                        "startLines": "365,366,367,368,369,434,443,1544,1889",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "23850,23897,23948,24005,24054,30575,31263,101066,127153",
+                        "endLines": "365,366,367,368,369,434,445,1546,1896",
+                        "endColumns": "46,50,56,48,46,46,12,12,12",
+                        "endOffsets": "23892,23943,24000,24049,24096,30617,31331,101137,127600"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Alazba\\.gradle\\caches\\transforms-3\\57adcc88568c38abb3ed964e99bebadc\\transformed\\jetified-play-services-maps-18.2.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4",
@@ -39,6 +75,25 @@
                         "endLines": "3118",
                         "endColumns": "20",
                         "endOffsets": "175603"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Alazba\\Documents\\Apps\\EnjazApp\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "137,791",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "433,953"
+                    },
+                    "to": {
+                        "startLines": "1547,1551",
+                        "startColumns": "4,4",
+                        "startOffsets": "101142,101323",
+                        "endLines": "1550,1553",
+                        "endColumns": "12,12",
+                        "endOffsets": "101318,101483"
                     }
                 },
                 {
@@ -114,23 +169,6 @@
                     }
                 },
                 {
-                    "source": "D:\\Apps\\enjaz\\EnjazApp\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,281,385,494,614,712",
-                        "endColumns": "143,81,103,108,119,97,74",
-                        "endOffsets": "194,276,380,489,609,707,782"
-                    },
-                    "to": {
-                        "startLines": "421,429,430,431,432,433,435",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "29439,30062,30144,30248,30357,30477,30622",
-                        "endColumns": "143,81,103,108,119,97,74",
-                        "endOffsets": "29578,30139,30243,30352,30472,30570,30692"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Alazba\\.gradle\\caches\\transforms-3\\0eb4c2f4870fb06fd8b963f201aaa8b0\\transformed\\jetified-startup-runtime-1.1.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -145,25 +183,6 @@
                         "startOffsets": "24101",
                         "endColumns": "82",
                         "endOffsets": "24179"
-                    }
-                },
-                {
-                    "source": "D:\\Apps\\enjaz\\EnjazApp\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "137,791",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "433,953"
-                    },
-                    "to": {
-                        "startLines": "1547,1551",
-                        "startColumns": "4,4",
-                        "startOffsets": "101142,101323",
-                        "endLines": "1550,1553",
-                        "endColumns": "12,12",
-                        "endOffsets": "101318,101483"
                     }
                 },
                 {
@@ -183,23 +202,6 @@
                         "endLines": "301,308,331,2963,2967",
                         "endColumns": "56,64,63,24,24",
                         "endOffsets": "20083,20390,21598,171570,171719"
-                    }
-                },
-                {
-                    "source": "D:\\Apps\\enjaz\\EnjazApp\\build\\firebase_crashlytics\\intermediates\\packaged_res\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "60",
-                        "endOffsets": "111"
-                    },
-                    "to": {
-                        "startLines": "19",
-                        "startColumns": "4",
-                        "startOffsets": "966",
-                        "endColumns": "60",
-                        "endOffsets": "1022"
                     }
                 },
                 {
@@ -349,6 +351,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Alazba\\Documents\\Apps\\EnjazApp\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,281,385,494,614,712",
+                        "endColumns": "143,81,103,108,119,97,74",
+                        "endOffsets": "194,276,380,489,609,707,782"
+                    },
+                    "to": {
+                        "startLines": "421,429,430,431,432,433,435",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "29439,30062,30144,30248,30357,30477,30622",
+                        "endColumns": "143,81,103,108,119,97,74",
+                        "endOffsets": "29578,30139,30243,30352,30472,30570,30692"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Alazba\\.gradle\\caches\\transforms-3\\e624916508579bf08ec842e6e3cb0a43\\transformed\\jetified-firebase-messaging-23.3.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -385,39 +404,20 @@
                     }
                 },
                 {
-                    "source": "D:\\Apps\\enjaz\\EnjazApp\\android\\app\\src\\main\\res\\values\\string.xml",
+                    "source": "C:\\Users\\Alazba\\Documents\\Apps\\EnjazApp\\build\\firebase_crashlytics\\intermediates\\packaged_res\\debug\\values\\values.xml",
                     "from": {
-                        "startLines": "2,3,5,4",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "57,109,230,166",
-                        "endColumns": "50,55,62,62",
-                        "endOffsets": "103,160,288,224"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "60",
+                        "endOffsets": "111"
                     },
                     "to": {
-                        "startLines": "371,422,423,427",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "24184,29583,29639,29917",
-                        "endColumns": "50,55,62,62",
-                        "endOffsets": "24230,29634,29697,29975"
-                    }
-                },
-                {
-                    "source": "D:\\Apps\\enjaz\\EnjazApp\\build\\flutter_inappwebview\\intermediates\\packaged_res\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,11,14",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,102,153,210,259,306,353,426,502",
-                        "endLines": "2,3,4,5,6,7,10,13,21",
-                        "endColumns": "46,50,56,48,46,46,12,12,12",
-                        "endOffsets": "97,148,205,254,301,348,421,497,949"
-                    },
-                    "to": {
-                        "startLines": "365,366,367,368,369,434,443,1544,1889",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "23850,23897,23948,24005,24054,30575,31263,101066,127153",
-                        "endLines": "365,366,367,368,369,434,445,1546,1896",
-                        "endColumns": "46,50,56,48,46,46,12,12,12",
-                        "endOffsets": "23892,23943,24000,24049,24096,30617,31331,101137,127600"
+                        "startLines": "19",
+                        "startColumns": "4",
+                        "startOffsets": "966",
+                        "endColumns": "60",
+                        "endOffsets": "1022"
                     }
                 },
                 {
