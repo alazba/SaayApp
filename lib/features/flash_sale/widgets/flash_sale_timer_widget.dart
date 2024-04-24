@@ -60,13 +60,13 @@ class _TimerWidget extends StatelessWidget {
           padding: const EdgeInsets.symmetric(
               horizontal: Dimensions.paddingSizeSmall,
               vertical: Dimensions.paddingSizeSmall),
-          // decoration: BoxDecoration(
-          //   color: Theme.of(context).primaryColor,
-          //   shape: BoxShape.circle,
-          // ),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            shape: BoxShape.circle,
+          ),
           child: Text(
               timeCount > 9 ? timeCount.toString() : '0${timeCount.toString()}',
-              style: rubikMedium.copyWith(color: Colors.black)),
+              style: rubikMedium.copyWith(color: Colors.red)),
         ),
         const SizedBox(height: Dimensions.paddingSizeSmall),
         Text(timeUnit,

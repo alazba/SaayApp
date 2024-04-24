@@ -36,7 +36,7 @@ class ImageSelectionWidget extends StatelessWidget {
                           width: 60,
                           height: 50,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
+                            borderRadius: BorderRadius.circular(5),
                             gradient: index == cartProvider.productSelect
                                 ? LinearGradient(
                                     colors: [
@@ -53,7 +53,7 @@ class ImageSelectionWidget extends StatelessWidget {
                           padding: EdgeInsets.all(
                               ResponsiveHelper.isDesktop(context) ? 3 : 5),
                           child: ClipRRect(
-                            borderRadius: BorderRadius.circular(10),
+                            borderRadius: BorderRadius.circular(3),
                             child: CustomImageWidget(
                               image:
                                   '${Provider.of<SplashProvider>(context, listen: false).baseUrls!.productImageUrl}/${productProvider.product!.image![index]}',

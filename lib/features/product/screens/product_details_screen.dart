@@ -472,7 +472,7 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                             Container(
                               width: Dimensions.webScreenWidth,
                               padding: const EdgeInsets.all(
-                                  Dimensions.paddingSizeSmall),
+                                  Dimensions.paddingSizeExtraLarge),
                               child: CustomButtonWidget(
                                 btnTxt: getTranslated(
                                     isExistInCart

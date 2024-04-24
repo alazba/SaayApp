@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		CfIewnB9UVoRwi/KP3DLGgXkwAo=
+		9/CCSnYtqjTlgX6u/pbrx/0xJdI=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		VDKwERBVITZ+JkJidSRJLL0xQPc=
+		sekdkbPLwfRousUHAoR/uNe0g8Q=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>flutter_assets/assets/.DS_Store</key>
 		<data>
-		NHZjsqUe0XPb6s7Pe+f3BYT4mFM=
+		Xq5ikzkRI+PMdN8YYkDvEvFHrJw=
 		</data>
 		<key>flutter_assets/assets/fonts/Arial-Bold.ttf</key>
 		<data>
@@ -156,6 +156,10 @@
 		<data>
 		SoaZALWdslNXaQ9aHfTT7yZfrUs=
 		</data>
+		<key>flutter_assets/assets/image/.DS_Store</key>
+		<data>
+		oVCQnMMvorTPUtzjp3uQTUKUS5M=
+		</data>
 		<key>flutter_assets/assets/image/amount.png</key>
 		<data>
 		QxM2XcoWtpx40qxVNB0l/zva8ww=
@@ -242,11 +246,11 @@
 		</data>
 		<key>flutter_assets/assets/image/flash_sale.png</key>
 		<data>
-		R4vZ9OE0uPzV1Iw+a3HwMu0HigE=
-		</data>
-		<key>flutter_assets/assets/image/flash_salex.png</key>
-		<data>
 		OBi7KZLbVV2sfy3+BgfEsui8lag=
+		</data>
+		<key>flutter_assets/assets/image/flash_sale1.png</key>
+		<data>
+		R4vZ9OE0uPzV1Iw+a3HwMu0HigE=
 		</data>
 		<key>flutter_assets/assets/image/flash_salexxx.png</key>
 		<data>
@@ -326,7 +330,7 @@
 		</data>
 		<key>flutter_assets/assets/image/logo.png</key>
 		<data>
-		1u0oD0CYio+szfn3qGZlDPoRHxU=
+		6ZPkOYfkcYjtvQkDBH2piQdmKVk=
 		</data>
 		<key>flutter_assets/assets/image/logo1.png</key>
 		<data>
@@ -334,11 +338,7 @@
 		</data>
 		<key>flutter_assets/assets/image/logo2.png</key>
 		<data>
-		ttThF3aA4uWMudX9FBQ68JRnZ/o=
-		</data>
-		<key>flutter_assets/assets/image/logox.png</key>
-		<data>
-		2wOh76ubXSPUw77Ne2RzND5P5pA=
+		1u0oD0CYio+szfn3qGZlDPoRHxU=
 		</data>
 		<key>flutter_assets/assets/image/maintenance.png</key>
 		<data>
@@ -590,7 +590,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		SmCbZ+yU6OFanVCrquxwQPg25Ys=
+		Zl8TDG+XY498wc2dYRRGP22Zy10=
 		</data>
 		<key>flutter_assets/packages/country_code_picker/flags/ad.png</key>
 		<data>
@@ -1927,14 +1927,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			526EYSwXGsLTuvkkKW6R6axxu+qsL0FtwCmCufmAFqE=
+			Un2SVLI7ZMy8cbdFrzfW9RGgsoNwhJiyBP84pPmAyo0=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W5cA5ZCUKhEAd7gco03GHyRh0VO32lhUd5uR30yrxmk=
+			FmyicSMK+tUmM5mKbbsGPMsM+rG8S10L69bxRSNyusY=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -2326,14 +2326,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JlZV9w0WXJ/1/lQEczBteMc0xRfctjyLPPNjMlAgdaE=
+			4vFEkHTbOppxqlNkcI1bCh3vETlbgLHoFZxsli9VaL4=
 			</data>
 		</dict>
-		<key>flutter_assets/assets/image/flash_salex.png</key>
+		<key>flutter_assets/assets/image/flash_sale1.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4vFEkHTbOppxqlNkcI1bCh3vETlbgLHoFZxsli9VaL4=
+			JlZV9w0WXJ/1/lQEczBteMc0xRfctjyLPPNjMlAgdaE=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/image/flash_salexxx.png</key>
@@ -2473,7 +2473,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RDNgnnC/hni0K2RUbGOWpF/ykrnsZf29qVOlevbefew=
+			YZyfPGEH4wF2GfgOUTZ/6uj0qiMlZ1lxSWnYvBDe30c=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/image/logo1.png</key>
@@ -2487,14 +2487,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lMBSjVrePhuLvzNo0gdhPYIMYKs+y3X8NuPl9oDx29c=
-			</data>
-		</dict>
-		<key>flutter_assets/assets/image/logox.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			efXA0zRuMbftw127UR2sGlSYioBlEj9DVOcWCubkmVU=
+			RDNgnnC/hni0K2RUbGOWpF/ykrnsZf29qVOlevbefew=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/image/maintenance.png</key>
@@ -2935,7 +2928,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kz1BdzJrwLmRDkr5+oxzvRZUV15ZnwvCxV+J/3s7p+8=
+			3UiZHUg+6DCofGUDrsdme+p2XV8kgkSXCLLodfy7yRU=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/country_code_picker/flags/ad.png</key>

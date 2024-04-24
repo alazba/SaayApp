@@ -230,13 +230,13 @@ class ProductWishListButton extends StatelessWidget {
         child: Container(
           height: 35,
           width: 35,
-          // decoration: BoxDecoration(
-          //   color: Theme.of(context).cardColor.withOpacity(0.9),
-          //   border: Border.all(
-          //       width: 0.6,
-          //       color: Theme.of(context).hintColor.withOpacity(0.1)),
-          //   borderRadius: BorderRadius.circular(Dimensions.radiusSizeDefault),
-          // ),
+          decoration: BoxDecoration(
+            color: Theme.of(context).cardColor.withOpacity(0.9),
+            border: Border.all(
+                width: 0.6,
+                color: Theme.of(context).hintColor.withOpacity(0.1)),
+            borderRadius: BorderRadius.circular(Dimensions.radiusSizeDefault),
+          ),
           alignment: Alignment.center,
           child: Icon(
               wishListProvider.wishIdList.contains(product.id)
@@ -318,7 +318,7 @@ class ProductImageView extends StatelessWidget {
               Positioned.fill(
                   child: Padding(
                 padding: const EdgeInsets.all(Dimensions.paddingSizeExtraSmall)
-                    .copyWith(top: isVertical ? 35 : 30),
+                    .copyWith(top: isVertical ? 50 : 10),
                 child: Align(
                   alignment: Alignment.topLeft,
                   child: InkWell(
@@ -345,15 +345,15 @@ class ProductImageView extends StatelessWidget {
                     child: Container(
                       height: isExistInCart ? 0 : 35,
                       width: 35,
-                      // decoration: BoxDecoration(
-                      //   color: Theme.of(context).cardColor.withOpacity(0.9),
-                      //   border: Border.all(
-                      //       width: 0.6,
-                      //       color:
-                      //           Theme.of(context).hintColor.withOpacity(0.2)),
-                      //   borderRadius:
-                      //       BorderRadius.circular(Dimensions.radiusSizeDefault),
-                      // ),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).cardColor.withOpacity(0.9),
+                        border: Border.all(
+                            width: 0.6,
+                            color:
+                                Theme.of(context).hintColor.withOpacity(0.2)),
+                        borderRadius:
+                            BorderRadius.circular(Dimensions.radiusSizeDefault),
+                      ),
                       alignment: Alignment.center,
                       child: isExistInCart
                           ? Column(
@@ -407,7 +407,7 @@ class ProductImageView extends StatelessWidget {
                                   ),
                                 ])
                           : Icon(
-                              Icons.shopping_cart,
+                              Icons.shopping_cart_outlined,
                               size: Dimensions.paddingSizeDefault,
                               color: Theme.of(context).primaryColor,
                             ),

@@ -56,7 +56,7 @@ class _MenuScreenState extends State<MenuScreen> {
                     padding: const EdgeInsets.only(
                       left: Dimensions.paddingSizeExtraLarge,
                       right: Dimensions.paddingSizeExtraLarge,
-                      top: 40,
+                      top: 70,
                       bottom: Dimensions.paddingSizeExtraLarge,
                     ),
                     child: Row(children: [
