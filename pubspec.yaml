@@ -80,11 +80,11 @@ flutter:
   fonts:
     - family: Exo
       fonts:
-        - asset: assets/fonts/Shahd-Font-Regular.ttf
+        - asset: assets/fonts/Arial-Regular.ttf
           weight: 400
-        - asset: assets/fonts/Shahd-Font-Regular.ttf
+        - asset: assets/fonts/Arial-Medium.ttf
           weight: 600
-        - asset: assets/fonts/Shahd-Font-Regular.ttf
+        - asset: assets/fonts/Arial-SemiBold.ttf
           weight: 500
-        - asset: assets/fonts/Shahd-Font-Regular.ttf
+        - asset: assets/fonts/Arial-Bold.ttf
           weight: 700
