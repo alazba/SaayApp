@@ -60,7 +60,7 @@ class _TimerWidget extends StatelessWidget {
           padding: const EdgeInsets.symmetric(
               horizontal: Dimensions.paddingSizeSmall,
               vertical: Dimensions.paddingSizeSmall),
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Colors.white,
             shape: BoxShape.circle,
           ),

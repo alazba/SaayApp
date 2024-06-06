@@ -18,7 +18,7 @@ class CustomAppBarWidget extends StatelessWidget
       this.isBackButtonExist = true,
       this.onBackPressed,
       this.onlyDesktop = false,
-      this.space = 20})
+      this.space = 50})
       : super(key: key);
 
   @override

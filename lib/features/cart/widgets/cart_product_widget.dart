@@ -285,8 +285,8 @@ class CartProductWidget extends StatelessWidget {
                             decoration: BoxDecoration(
                                 color: Theme.of(context)
                                     .secondaryHeaderColor
-                                    .withOpacity(0.5),
-                                borderRadius: BorderRadius.circular(25)),
+                                    .withOpacity(0.3),
+                                borderRadius: BorderRadius.circular(15)),
                             child: Row(children: [
                               if (!ResponsiveHelper.isDesktop(context))
                                 InkWell(

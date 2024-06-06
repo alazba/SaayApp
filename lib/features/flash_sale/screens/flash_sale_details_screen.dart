@@ -58,11 +58,11 @@ class _FlashSaleDetailsScreenState extends State<FlashSaleDetailsScreen> {
           : const SizedBox(),
       appBar: CustomAppBarWidget(
         title: getTranslated('flash_sale', context),
-        onlyDesktop: true,
+       onlyDesktop: false,
       ),
       body: CustomScrollView(controller: _scrollController, slivers: [
         if (!ResponsiveHelper.isDesktop(context))
-          HomeAppBarWidget(drawerGlobalKey: drawerGlobalKey),
+          //HomeAppBarWidget(drawerGlobalKey: drawerGlobalKey),
         SliverToBoxAdapter(
             child: Column(children: [
           Center(

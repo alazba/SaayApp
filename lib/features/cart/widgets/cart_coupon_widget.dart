@@ -30,7 +30,7 @@ class CartCouponWidget extends StatelessWidget {
       strokeWidth: 2,
       color: Theme.of(context).primaryColor,
       borderType: BorderType.RRect,
-      radius: const Radius.circular(50),
+      radius: const Radius.circular(20),
       child: Consumer<CouponProvider>(
         builder: (context, coupon, child) {
           return Padding(

@@ -118,7 +118,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                       ? 100.0
                                       : 80,
                                   fit: BoxFit.scaleDown,
-                                  matchTextDirection: true,
+                                  matchTextDirection: false,
                                 ),
                               ),
                               const SizedBox(

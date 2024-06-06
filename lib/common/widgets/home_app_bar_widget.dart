@@ -40,7 +40,7 @@ class HomeAppBarWidget extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const CustomAssetImageWidget(Images.logo,
-                      width: 125, height: 30),
+                      width: 130, height: 40),
                   const SizedBox(width: 40),
                   Expanded(
                     child: Text(
