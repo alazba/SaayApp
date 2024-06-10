@@ -127,7 +127,7 @@ class _AllCategoryScreenState extends State<AllCategoryScreen> {
                                       }
                                     },
                                     tileColor: index == 0
-                                        ? Colors.blue
+                                        ? Colors.grey
                                             .withOpacity(0.2)
                                         : Colors.transparent,
                                     shape: RoundedRectangleBorder(
