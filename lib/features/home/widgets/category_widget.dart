@@ -120,7 +120,7 @@ class CategoryWidget extends StatelessWidget {
                                                     ),
                                                   ),
                                                   SizedBox(
-                                                    width: 60,
+                                                    width: 70,
                                                     child: Center(
                                                       child: Text(
                                                         category

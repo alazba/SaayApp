@@ -22,7 +22,7 @@ class CategoryItemWidget extends StatelessWidget {
       height: 110,
       decoration: BoxDecoration(
           color: isSelected
-              ? Theme.of(context).primaryColor
+              ? Colors.grey
               : Theme.of(context).cardColor),
       child: Center(
         child:
@@ -35,7 +35,7 @@ class CategoryItemWidget extends StatelessWidget {
             decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: isSelected
-                    ? Theme.of(context).primaryColor
+                    ? Colors.grey
                     : Theme.of(context).primaryColor.withOpacity(0.1)),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(5),

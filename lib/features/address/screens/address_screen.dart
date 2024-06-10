@@ -51,6 +51,7 @@ class _AddressScreenState extends State<AddressScreen> {
                       : 0),
               child: !ResponsiveHelper.isDesktop(context)
                   ? FloatingActionButton(
+                      shape: const CircleBorder(),
                       backgroundColor: Theme.of(context).primaryColor,
                       onPressed: () => Navigator.pushNamed(
                           context,

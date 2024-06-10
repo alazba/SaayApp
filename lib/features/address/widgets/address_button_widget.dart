@@ -88,7 +88,7 @@ class AddressButtonWidget extends StatelessWidget {
           Container(
             height: 50.0,
             width: Dimensions.webScreenWidth,
-            margin: const EdgeInsets.all(Dimensions.paddingSizeSmall),
+            margin: const EdgeInsets.all(Dimensions.paddingSizeLarge),
             child: Consumer<LocationProvider>(
                 builder: (context, locationProvider, _) {
               return CustomButtonWidget(

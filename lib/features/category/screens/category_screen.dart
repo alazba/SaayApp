@@ -77,7 +77,7 @@ class _CategoryScreenState extends State<CategoryScreen>
                         scrolledUnderElevation: 0,
                         backgroundColor: Theme.of(context).canvasColor,
                         expandedHeight: 250,
-                        toolbarHeight: 80 + MediaQuery.of(context).padding.top,
+                        toolbarHeight: 50 + MediaQuery.of(context).padding.top,
                         pinned: true,
                         floating: false,
                         leading: ResponsiveHelper.isDesktop(context)
@@ -88,7 +88,7 @@ class _CategoryScreenState extends State<CategoryScreen>
                                     : MediaQuery.of(context).size.width,
                                 child: IconButton(
                                     icon: const Icon(Icons.chevron_left,
-                                        color: Colors.white),
+                                        color: Colors.black),
                                     onPressed: () => Navigator.pop(context)),
                               ),
                         flexibleSpace: Container(
