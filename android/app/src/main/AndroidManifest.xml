@@ -97,5 +97,19 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
+    <activity
+    android:name="io.saay.shopo"
+    android:exported="true"
+>
+    <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+
+        <data android:scheme="signinwithapple" />
+        <data android:path="callback" />
+    </intent-filter>
+</activity>
     </application>
 </manifest>

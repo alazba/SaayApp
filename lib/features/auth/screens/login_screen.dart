@@ -1,5 +1,8 @@
+import 'dart:io';
+
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:enjaz_user/common/enums/footer_type_enum.dart';
+import 'package:enjaz_user/features/auth/domain/models/social_login_model.dart';
 import 'package:enjaz_user/features/auth/widgets/social_login_widget.dart';
 import 'package:enjaz_user/helper/responsive_helper.dart';
 import 'package:enjaz_user/localization/language_constrants.dart';
@@ -21,7 +24,9 @@ import 'package:enjaz_user/common/widgets/footer_web_widget.dart';
 import 'package:enjaz_user/common/widgets/web_app_bar_widget.dart';
 import 'package:enjaz_user/features/auth/widgets/code_picker_widget.dart';
 import 'package:flutter/material.dart';
+
 import 'package:provider/provider.dart';
+import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -66,6 +71,26 @@ class _LoginScreenState extends State<LoginScreen> {
     _passwordController!.dispose();
     _emailNumberFocus.dispose();
     super.dispose();
+  }
+
+  void route(
+    bool isRoute,
+    String? token,
+    String errorMessage,
+  ) async {
+    if (isRoute) {
+      if (token != null) {
+        Navigator.pushNamedAndRemoveUntil(
+          context,
+          Routes.getDashboardRoute('home'),
+          (route) => false,
+        );
+      } else {
+        showCustomSnackBar(errorMessage, context);
+      }
+    } else {
+      showCustomSnackBar(errorMessage, context);
+    }
   }
 
   @override
@@ -115,10 +140,10 @@ class _LoginScreenState extends State<LoginScreen> {
                                 child: Image.asset(
                                   Images.logo,
                                   height: ResponsiveHelper.isDesktop(context)
-                                      ? 100.0
-                                      : 80,
+                                      ? 70.0
+                                      : 40,
                                   fit: BoxFit.scaleDown,
-                                  matchTextDirection: false,
+                                  matchTextDirection: true,
                                 ),
                               ),
                               const SizedBox(
@@ -393,8 +418,40 @@ class _LoginScreenState extends State<LoginScreen> {
                               const SizedBox(
                                   height: Dimensions.paddingSizeLarge),
 
-                              // for create an account
+                              Platform.isIOS
+                                  ? SignInWithAppleButton(
+                                      onPressed: () async {
+                                        final credential = await SignInWithApple
+                                            .getAppleIDCredential(
+                                          scopes: [
+                                            AppleIDAuthorizationScopes.email,
+                                            AppleIDAuthorizationScopes.fullName,
+                                          ],
+                                          webAuthenticationOptions:
+                                              WebAuthenticationOptions(
+                                            clientId: 'io.saay.shop.applelogin',
+                                            redirectUri: Uri.parse(
+                                                'https://brassy-fan-raincoat.glitch.me/callbacks/sign_in_with_apple'),
+                                          ),
+                                        );
 
+                                        authProvider.socialLogin(
+                                            SocialLoginModel(
+                                              email: '',
+                                              step: '2',
+                                              token:
+                                                  credential.authorizationCode,
+                                              uniqueId:
+                                                  credential.userIdentifier,
+                                              medium: 'apple',
+                                            ),
+                                            route);
+                                      },
+                                    )
+                                  : const SizedBox(),
+                              const SizedBox(
+                                  height: Dimensions.paddingSizeLarge),
+                              //
                               if (configModel.socialLoginStatus!.isFacebook! ||
                                   configModel.socialLoginStatus!.isGoogle!)
                                 const Center(child: SocialLoginWidget()),

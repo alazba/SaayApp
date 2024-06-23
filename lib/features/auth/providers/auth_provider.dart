@@ -273,6 +273,9 @@ class AuthProvider with ChangeNotifier {
       try {
         token = map['token'];
       } catch (e) {
+        print('/////////FromLoginScreen///////////');
+        print('error ===> $e');
+
         token = null;
       }
 

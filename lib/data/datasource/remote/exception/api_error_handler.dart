@@ -1,5 +1,7 @@
 // ignore_for_file: empty_catches
 
+import 'dart:convert';
+
 import 'package:dio/dio.dart';
 import 'package:enjaz_user/common/models/error_response_model.dart';
 import 'package:enjaz_user/common/enums/app_mode.dart';
@@ -44,6 +46,7 @@ class ApiErrorHandler {
                       errorResponse.errors != null &&
                       errorResponse.errors!.isNotEmpty) {
                     if (kDebugMode) {
+                      // print(jsonEncode(errorResponse.errors));
                       print(
                           'error----------------== ${errorResponse.errors![0].message} || error: ${error.response!.requestOptions.uri}');
                     }
