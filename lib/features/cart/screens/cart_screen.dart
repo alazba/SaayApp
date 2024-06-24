@@ -42,7 +42,9 @@ class CartScreen extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBarWidget(
           title: getTranslated('my_cart', context),
-          isBackButtonExist: fromDetails),
+          isBackButtonExist: fromDetails,
+          onlyDesktop: true,
+          ),
       body: Consumer<CartProvider>(
         builder: (context, cart, child) {
           double? deliveryCharge = 0;

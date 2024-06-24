@@ -23,7 +23,7 @@ class HomeAppBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-      floating: true,
+      floating: false,
       elevation: 0,
       centerTitle: false,
       automaticallyImplyLeading: false,

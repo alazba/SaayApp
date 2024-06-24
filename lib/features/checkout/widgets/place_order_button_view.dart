@@ -56,7 +56,7 @@ class PlaceOrderButtonView extends StatelessWidget {
       return Container(
         width: Dimensions.webScreenWidth,
         alignment: Alignment.center,
-        padding: const EdgeInsets.all(Dimensions.paddingSizeSmall),
+        padding: const EdgeInsets.all(Dimensions.paddingSizeLarge),
         child: Consumer<OrderProvider>(builder: (context, orderProvider, _) {
           return CustomButtonWidget(
               isLoading: orderProvider.isLoading,

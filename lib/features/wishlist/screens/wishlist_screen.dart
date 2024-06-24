@@ -35,7 +35,9 @@ class _WishListScreenState extends State<WishListScreen> {
                   preferredSize: Size.fromHeight(90), child: WebAppBarWidget())
               : CustomAppBarWidget(
                   title: getTranslated('favourite_list', context),
-                  isBackButtonExist: !ResponsiveHelper.isMobile(context)))
+                  isBackButtonExist: !ResponsiveHelper.isMobile(context),
+                  onlyDesktop: true,
+                  ))
           as PreferredSizeWidget?,
       body: isLoggedIn
           ? Consumer<WishListProvider>(

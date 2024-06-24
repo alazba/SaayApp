@@ -78,8 +78,8 @@ class CategoryWidget extends StatelessWidget {
                                                         )),
                                                 child: Column(children: [
                                                   Container(
-                                                    width: 65,
-                                                    height: 65,
+                                                    width: 50,
+                                                    height: 50,
                                                     // decoration: BoxDecoration(
                                                     //     borderRadius:
                                                     //         const BorderRadius
@@ -96,7 +96,7 @@ class CategoryWidget extends StatelessWidget {
                                                           const BorderRadius
                                                               .all(
                                                               Radius.circular(
-                                                                  10)),
+                                                                  3)),
                                                       child: FadeInImage
                                                           .assetNetwork(
                                                         placeholder:
@@ -104,16 +104,16 @@ class CategoryWidget extends StatelessWidget {
                                                                 context),
                                                         image:
                                                             '${category.categoryList![index].image}',
-                                                        width: 65,
-                                                        height: 65,
+                                                        width: 60,
+                                                        height: 60,
                                                         fit: BoxFit.cover,
                                                         imageErrorBuilder:
                                                             (c, o, t) =>
                                                                 Image.asset(
                                                           Images.placeholder(
                                                               context),
-                                                          width: 65,
-                                                          height: 65,
+                                                          width: 50,
+                                                          height: 50,
                                                           fit: BoxFit.cover,
                                                         ),
                                                       ),
