@@ -59,10 +59,10 @@ class HomeAppBarWidget extends StatelessWidget {
           hoverColor: Colors.transparent,
           onTap: () => Navigator.pushNamed(context, Routes.getCouponRoute()),
           child: Container(
-            decoration: BoxDecoration(
-              color: Theme.of(context).secondaryHeaderColor,
-              shape: BoxShape.circle,
-            ),
+            // decoration: BoxDecoration(
+            //   color: Theme.of(context).secondaryHeaderColor,
+            //   shape: BoxShape.circle,
+            // ),
             child: Padding(
               padding: const EdgeInsets.all(5),
               child: Image.asset(Images.coupon, height: 16, width: 16),

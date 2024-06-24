@@ -18,8 +18,8 @@ ThemeData light = ThemeData(
   colorScheme: ColorScheme(
     background: const Color(0xFFFCFCFC),
     brightness: Brightness.light,
-    primary: const Color(0xFF562E9C),
-    onPrimary: const Color(0xFF562E9C),
+    primary: const Color.fromARGB(255, 174, 181, 196),
+    onPrimary: const Color.fromARGB(255, 174, 181, 196),
     secondary: const Color(0xFFEFE6FE),
     onSecondary: const Color(0xFFEFE6FE),
     error: Colors.redAccent,

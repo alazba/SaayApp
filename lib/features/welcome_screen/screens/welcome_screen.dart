@@ -30,10 +30,10 @@ class WelcomeScreen extends StatelessWidget {
               width: Dimensions.webScreenWidth,
               child: Column(
                 children: [
-                  const SizedBox(height: 50),
+                  const SizedBox(height: 70),
                   Container(
                     alignment: Alignment.bottomCenter,
-                    padding: const EdgeInsets.all(30),
+                    padding: const EdgeInsets.all(80),
                     child: ResponsiveHelper.isWeb()
                         ? Consumer<SplashProvider>(
                             builder: (context, splash, child) =>
@@ -45,9 +45,9 @@ class WelcomeScreen extends StatelessWidget {
                               height: 200,
                             ),
                           )
-                        : Image.asset(Images.logo, height: 200),
+                        : Image.asset(Images.logo, height: 100),
                   ),
-                  const SizedBox(height: 30),
+                  const SizedBox(height: 10),
                   Text(
                     getTranslated('welcome', context),
                     textAlign: TextAlign.center,
