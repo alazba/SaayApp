@@ -119,11 +119,11 @@ class FlashSaleWidget extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Image.asset(Images.flashSale,
-                                  width: 150, height: 115, fit: BoxFit.cover),
+                                  width: 130, height: 100, fit: BoxFit.cover),
                               const Padding(
                                 padding: EdgeInsets.only(
-                                    top: Dimensions.paddingSizeDefault,
-                                    right: Dimensions.paddingSizeDefault),
+                                    top: Dimensions.paddingSizeLarge,
+                                    right: Dimensions.paddingSizeLarge),
                                 child: FlashSaleTimerWidget(),
                               ),
                             ]),

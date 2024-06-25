@@ -68,25 +68,27 @@ class _ChatScreenState extends State<ChatScreen> {
 
     return Scaffold(
       appBar: ResponsiveHelper.isDesktop(context)
-          ? const CustomAppBarWidget()
+          ? const CustomAppBarWidget(
+            onlyDesktop: false,
+          )
           : AppBar(
-              title: Text(
-                isAdmin
-                    ? '${splashProvider.configModel?.ecommerceName}'
-                    : '${widget.orderModel?.deliveryMan?.fName} ${widget.orderModel?.deliveryMan?.lName}',
-                style: rubikMedium.copyWith(
-                    color: Theme.of(context).secondaryHeaderColor),
-              ),
-              backgroundColor: Theme.of(context).primaryColor,
+              // title: Text(
+              //   isAdmin
+              //       ? '${splashProvider.configModel?.ecommerceName}'
+              //       : '${widget.orderModel?.deliveryMan?.fName} ${widget.orderModel?.deliveryMan?.lName}',
+              //   style: rubikMedium.copyWith(
+              //       color: Theme.of(context).primaryColor),
+              // ),
+              //backgroundColor: Theme.of(context).primaryColor,
               leading: BackButton(
-                color: Theme.of(context).secondaryHeaderColor,
+                color: Theme.of(context).primaryColor,
               ),
               actions: <Widget>[
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(15.0),
                     child: Container(
-                      width: 40,
-                      height: 40,
+                      width: 80,
+                      height: 80,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(50),
                           border: Border.all(
@@ -178,7 +180,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                                                 .all(
                                                                 Radius.circular(
                                                                     Dimensions
-                                                                        .paddingSizeDefault)),
+                                                                        .paddingSizeExtraLarge)),
                                                         child: ResponsiveHelper
                                                                 .isWeb()
                                                             ? Image.network(
@@ -218,7 +220,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                                                 borderRadius: BorderRadius.all(
                                                                     Radius.circular(
                                                                         Dimensions
-                                                                            .paddingSizeDefault))),
+                                                                            .paddingSizeExtraLarge))),
                                                             child:
                                                                 const Padding(
                                                               padding:
@@ -251,13 +253,14 @@ class _ChatScreenState extends State<ChatScreen> {
                               },
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(
-                                    horizontal: Dimensions.paddingSizeDefault),
+                                    horizontal: Dimensions.paddingSizeExtraLarge),
                                 child: Image.asset(Images.image,
                                     width: 25,
                                     height: 25,
                                     color: Theme.of(context).hintColor),
                               ),
                             ),
+                            
                             SizedBox(
                               height: 25,
                               child: VerticalDivider(
@@ -266,7 +269,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                   color: Theme.of(context).hintColor),
                             ),
                             const SizedBox(
-                                width: Dimensions.paddingSizeDefault),
+                                width: Dimensions.paddingSizeExtraLarge),
                             Expanded(
                               child: TextField(
                                 inputFormatters: [
@@ -349,7 +352,7 @@ class _ChatScreenState extends State<ChatScreen> {
                               },
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(
-                                    horizontal: Dimensions.paddingSizeDefault),
+                                    horizontal: Dimensions.paddingSizeExtraLarge),
                                 child: Provider.of<ChatProvider>(context,
                                             listen: false)
                                         .isLoading
@@ -370,6 +373,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                       ),
                               ),
                             ),
+                            
                           ]),
                         ],
                       ),
